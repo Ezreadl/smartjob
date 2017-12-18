@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+html,body {
+    font: normal 16px verdana;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+body,table,em,input,select,textarea,form,p,h1,h2 {
+    font-family: '微软雅黑', Verdana, Helvetica, sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+}
+input{
+    outline:none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;!important;
+}
+.navBox0{
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 1075px;
+	background: #F6F6F6;
+}
+.quantity1{
+    width: 19.04%;
+    float: left;
+    height: 135px;
+    margin-right: 1.2%;
+    background: #0081BB;
+    position: relative;
+    /*border: 1px solid black;*/
+}
+.quantity1 tr th{
+    font-family: "宋体";
+}
+.quantity2{
+    width: 19.04%;
+    float: left;
+    height: 135px;
+    margin-right: 1.2%;
+    background: #EF822E;
+    position: relative;
+    /*border: 1px solid black;*/
+}
+.quantity2 tr th{
+    font-family: "宋体";
+}
+.tableAll{
+    position: absolute;
+    z-index: 3;
+    width:90%;
+    height: 48%;
+    left:50%;
+    margin-left:-45%;
+}
+.tableAll tr:nth-child(1){
+    height: 45%;
+}
+.tableAll tr:nth-child(2){
+    height:50%;
+}
+.tableAll tr th{
+    font-size: 13px;
+    color: white;
+    font-weight: 100;
+    text-align: left;
+}
+.tableAll tr td{
+    font-size:25px;
+    color: #F8F523;
+    text-align: left;
+    transform:scale(1,1.3);
+}
+.indexForm{
+    width: 100%;
+    height: 480px;
+    margin-top: 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: 8px;
+    background: white;
+}
+.indexForm ul li{
+    width: 48%;
+    float: left;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.indexForm ul li:nth-child(1){
+    height: 60%;
+}
+.indexForm ul li:nth-child(2){
+     float: right;
+    height: 60%;
+}
+.indexForm ul li:nth-child(3){
+    margin-top:0.5%;
+    height:35%;
+}
+.indexForm ul li:nth-child(4){
+    float: right;
+    margin-top:0.5%;
+    height:35%;
+}
+.rightBorder{
+    border-right:1px dashed #E5E5E5;
+}
+.bottomBorder{
+    border-bottom:1px dashed #E5E5E5;
+}
+.indexNumber{
+    font-size: 22px;
+    color: #FD4041;
+}
+.rightBorder1{
+    border-right: 1px solid #EBEBEB;
+}
+
+.warnDetail{
+    width: 100%;
+    height: 345px;
+    float: left;
+    margin-top:10px;
+    /*border: 1px solid black;*/
+}
+.warnTable1{
+    width: 100%;
+    height:45px;
+    background: #4294DE;
+    text-align: center;
+    color: #FDFDFF;
+    letter-spacing: 3px;
+    border-radius: 8px 8px 0px 0px;
+}
+.warnTable2{
+    width: 100%;
+    height:265px;
+    border-top: none;
+    text-align: center;
+    color: #535353;
+    font-size: 14px;
+    font-family:"Arial",宋体;
+}
+.warnTable2 tr:nth-child(odd){
+    background: #FFFFFF;
+    height: 40px;
+}
+.warnTable2 tr:nth-child(even){
+    background: #F2F2F2;
+    height: 35px;
+}
+.warnBox{
+    width: 70%;
+    margin: auto;
+    height: 25px;
+    line-height: 25px;
+    background: #FF7C48;
+    color: white;
+    border-radius: 5px;
+}
+.searchBtn{
+    width:40px;
+    height:20px;
+    line-height:17px;
+    margin-right: 10px;
+    border: 1px solid #9EDAF1;
+    color: #2A7992;
+    background: linear-gradient(#F0F9FF, #A6DCFF);
+    padding: 1px;
+}
+.showPic{
+    width: 100%;
+    height:310px;
+    float: left;
+}
+.showPicTable{
+    width: 100%;
+    height: 270px;
+    border: 1.5px solid #E3E3E3;
+    border-radius: 8px;
+    background: white;
+    margin-top: 5px;
+}
+.showPic table{
+    width: 97%;
+    margin:auto;
+}
+.showPic table tr:nth-child(1){
+    height: 45px;
+
+}
+.showPic table tr:nth-child(2){
+    height: 225px;
+}
+.indexPic{
+    width: 100%;
+    height: 295px;
+    float: left;
+    margin-top:10px;
+}
+.indexPicTable table{
+    width: 100%;
+    height:260px;
+    margin-top: 10px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    background: white;
+}
+.indexPicTable table tr td{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.rightBorder1{
+    border-right: 1px solid #EBEBEB;
+}

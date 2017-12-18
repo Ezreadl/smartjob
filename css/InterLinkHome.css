@@ -1,0 +1,492 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+html,body {
+    font: normal 16px verdana;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+body,table,em,input,select,textarea,form,p,h1,h2 {
+    font-family: '微软雅黑', Verdana, Helvetica, sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+}
+input{
+    outline:none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;!important;
+}
+.navBox{
+	position: absolute;
+	float: left;
+	width: 100%;
+	height: 1250px;
+	background: #F6F6F6;
+}
+.quantity11{
+    width: 18%;
+    float: left;
+    height: 90px;
+    margin-right:2.5%;
+    background: #C86093;
+    position: relative;
+}
+.quantity21{
+    width: 18%;
+    float: left;
+    height: 90px;
+    margin-right:2.5%;
+    background: #32A2CA;
+    position: relative;
+}
+.quantity31{
+    width: 18%;
+    float: left;
+    height: 90px;
+    margin-right:2.5%;
+    background: #CC9030;
+    position: relative;
+}
+.quantity41{
+    width: 18%;
+    float: left;
+    height: 90px;
+    margin-right:2.5%;
+    background: #79BB3F;
+    position: relative;
+}
+.quantity51{
+    width: 18%;
+    float: left;
+    height: 90px;
+    margin-right:2.5%;
+    background: #C95F5F;
+    position: relative;
+}
+.quantity61{
+    width: 18%;
+    float: left;
+    height: 90px;
+    background: #36BE9A;
+    position: relative;
+}
+.quantity1Div{
+    float: right;
+    width: 40%;
+    height: 65%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+.quantity1Div .fa-line-chart{
+     font-size:80px;
+     color: #B95989;
+ }
+.quantity1Div .fa-university{
+    font-size:90px;
+    color: #2E96BB;
+}
+.quantity1Div .fa-ils{
+    font-size:90px;
+    color: #BD862C;
+}
+.quantity1Div .fa-refresh{
+    font-size:90px;
+    color: #70AC3A;
+}
+.quantity1Div .fa-clock-o{
+    font-size:90px;
+    color: #B85859;
+}
+.quantity1Div .fa-sun-o{
+    font-size:90px;
+    color: #33AF8D;
+}
+.tableAll{
+    position: absolute;
+    z-index: 3;
+    width:90%;
+    height: 90%;
+    left:50%;
+    /*margin-top:2%;*/
+    margin-left:-45%;
+}
+.tableAll tr{
+    height: 50%;
+}
+.tableAll tr th{
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    text-align: left;
+    font-family: "宋体";
+}
+.tableAll tr td{
+    font-size:29px;
+    color: #F8F523;
+    text-align: left;
+    transform:scale(1,1.3);
+    cursor: pointer;
+    -ms-transform: scale(1,1.3);
+}
+.tableAll tr td:hover{
+ text-decoration: underline;
+}
+/*各级标题*/
+.AbnormalDiv{
+    margin-top: 10px;
+    font-size: 19px;
+    color: #2C2C2C;
+}
+.AbnormalTitle{
+    display: inline-block;
+    float: left;
+    width:5px;
+    height:18px;
+    background: #356AAA;
+    margin:4px 5px 2px 15px;
+}
+.AbnormalDiv select{
+    font-weight: 200;
+    border: 1px solid #cccccc;
+    height: 23px;
+    width: 70px;
+    font-size: 14px;
+    /*margin-bottom: 5px;*/
+    /*float: right;*/
+}
+/*链路分组*/
+.LinkGroup{
+    width: 100%;
+    height: 450px;
+    float: left;
+    /*position: absolute;*/
+}
+.group{
+    width: 100%;
+    height: 400px;
+    margin-top: 3px;
+    border: 1.5px solid #E4E4E4;
+    border-top: 2px solid #458FCE;
+    background: white;
+    position: relative;
+}
+.GroupUl{
+    width: 100%;
+    height: 30px;
+    background: #F9F9F9;
+    border-bottom: 1.5px solid #E2E2E2;
+}
+.groupLi{
+    float: left;
+    height: 23.5px;
+    width: auto;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3A3A3A;
+    border-right: 1.5px solid #E2E2E2;
+}
+.groupLi2{
+    float: left;
+    height: 23.5px;
+    width: auto;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3A3A3A;
+    border-right: 1.5px solid #E2E2E2;
+}
+.groupLi0{
+    float: left;
+    height: 23.5px;
+    padding: 3px 10px;
+    color: #3A3A3A;
+    border-right: 1.5px solid #E2E2E2;
+}
+.groupDiv{
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    display: block;
+}
+.groupGauge{
+    float: left;
+    width: 55%;
+    height:100%;
+    /*border: 1px solid black;*/
+}
+.groupGaugeTitle{
+    width: 83px;
+    height: 17px;
+    line-height: 17px;
+    margin:5px auto 0;
+    color: #EDF5FA;
+    background: #0B6AB4;
+    text-align: center;
+    border-radius: 2px;
+}
+.groupLine{
+    float: right;
+    width: 44%;
+    height:100%;
+    /*border: 1px solid black;*/
+}
+.groupGaugeTitle0{
+    width: 125px;
+    height: 17px;
+    line-height: 17px;
+    margin: auto;
+    background: #0B6AB4;
+    text-align: center;
+    color: #EDF5FA;
+    border-radius: 2px;
+}
+.groupGauge table{
+    width: 100%;
+    height: 100%;
+}
+.axis1{
+    width: 100%;
+    height:6.5%;
+}
+.axis2{
+    width: 100%;
+    height:43.5%;
+}
+.ChartDiv1{
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+.ChartDiv2{
+    width:35%;
+    height: 100%;
+    float: left;
+}
+.groupGauge table tr td{
+    height: auto;
+    font-size: 12px;
+}
+.interfaceRand{
+    width: 100%;
+    height: 400px;
+    border:1.5px solid #E4E4E4;
+    float: left;
+    background: white;
+}
+.interfaceRandDiv{
+    width: 98%;
+    height:100%;
+    margin:0 auto;
+}
+.groupLine2{
+    width:100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    /*border:1px solid black;*/
+}
+.groupLine2Div{
+    width: 100%;
+    height:6%;
+    font-family: '宋体';
+    font-weight: bolder;
+    color: #1062AF;
+    font-size: 17px;
+    margin-top: 0.8%;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    /*border: 1px solid black;*/
+}
+.groupLine2Div select{
+    font-weight: 200;
+    border: 1px solid #cccccc;
+    height: 23px;
+    width: 70px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    /*float: right;*/
+}
+.groupLine3{
+    width: 49.3%;
+    height: 100%;
+    float: right;
+}
+.groupLineRang{
+    display: block;
+    width:100%;
+    height: 88%;
+    border: 2px solid #ECECEC;
+    position: absolute;
+}
+.groupLine3Title{
+    width: 100%;
+    height:7%;
+    font-family: '宋体';
+    font-weight: bolder;
+    color: #1062AF;
+    font-size: 17px;
+    margin-top: 1.5%;
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+#flowDistribution{
+    width:100%;
+    height:88%;
+    border: 2px solid #ECECEC;
+}
+.groupLine0{
+    width:98%;
+    height:86%;
+    /*border: 2px solid #ECECEC;*/
+    /*border: 1px solid black;*/
+    display: block;
+}
+.groupLineDiv{
+    width: 100%;
+    height:6%;
+    font-family: '宋体';
+    font-weight: bolder;
+    color: #1062AF;
+    font-size: 17px;
+    margin-top: 8px;
+}
+/*告警明细*/
+.warnDetail{
+    width: 100%;
+    float: left;
+    height:430px;
+}
+.warnDetailTitle{
+    margin-top:9px;
+    font-size: 19px;
+    color: #2C2C2C;
+    position: relative;
+}
+.warnTable1{
+    width: 100%;
+    height:45px;
+    background: #4294DE;
+    text-align: center;
+    color: #FDFDFF;
+    border-radius: 8px 8px 0 0;
+}
+.warnTable2{
+    width: 100%;
+    border-top: none;
+    text-align: center;
+    color: #404040;
+    font-size: 14px;
+    font-family:"Arial",宋体;
+}
+.warnTable2 tr:nth-child(odd){
+    background: #FFFFFF;
+    height: 40px;
+}
+.warnTable2 tr:nth-child(even){
+    background: #F2F2F2;
+    height: 35px;
+}
+.warnBox{
+    width: 70%;
+    margin: auto;
+    height: 25px;
+    line-height: 25px;
+    background: #FF7C48;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.warnBox:hover{
+    background: #FF4500;
+}
+.more{
+    color: #4294DE;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    font-family:'宋体';
+    position: absolute;
+    top:5px;
+}
+.more1{
+    left: 45.5%;
+}
+.more2{
+    left: 96.5%;
+}
+.more:hover{
+    text-decoration: underline;
+}
+.warnDetailDiv{
+    width: 100%;
+    height: 95%;
+    float: left;
+    margin-top:3px;
+    /*border: 1px solid black;*/
+}
+.warnTableDiv1{
+    width:100%;
+    float: left;
+    height:100%;
+    border: 1px solid #E1E1E1;
+    background: white;
+    border-radius: 8px 8px 0 0;
+}
+.warnTableDiv101{
+    width: 100%;
+    height:360px;
+    overflow: auto;
+}
+.warnTableDiv2{
+    width: 49%;
+    float: right;
+    height:100%;
+    border: 1px solid #E1E1E1;
+    background: white;
+    border-radius: 8px 8px 0 0;
+}
+.warnTableDiv201{
+    width: 100%;
+    height:265px;
+    overflow: auto;
+}
+.warnTable1td1Div1{
+    width: 100%;
+    height:20px;
+    border-right: 1.5px solid #90B7DC;
+    line-height: 18px;
+}
+.warnTable1td1Div2{
+    width: 100%;
+    height:20px;
+    line-height: 18px;
+}
+/*底部版权所有*/
+.footer{
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    position: absolute;
+    top:1425px;
+    font-size: 13px;
+    color: black;
+    font-family: "宋体";
+    background-color: #cccccc;
+}

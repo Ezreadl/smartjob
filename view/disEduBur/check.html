@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>课程审批记录</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>	
+	<style type="text/css">
+		.layui-form-onswitch{
+			background-color: #6699cc !important;
+			border: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="searchItem">
+		<i class="layui-icon">&#xe615;</i> 
+		搜索条件
+	</div>
+	<div class="tableHeader">
+		
+		<div class="searchForm"  style="width: 87% !important;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">学校名称</option>
+			          <option value="1">城西附小</option>
+			          <option value="2">分水中学</option> 
+			        </select>
+			     </div>
+
+			    <div class="layui-input-inline">
+			      <div class="layui-input-block" style="margin-left:10px !important;">
+			        <input type="text" name="date" id="date1" autocomplete="off" class="layui-input" placeholder="2017-11-20">
+			      </div>
+			    </div>
+			  	
+			  	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">科目</option>
+			          <option value="1">物理</option>
+			          <option value="2">化学</option> 
+			        </select>
+			     </div>
+			     
+			     <div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">教师</option>
+			          <option value="1">张三</option>
+			          <option value="2">李四</option> 
+			        </select>
+			     </div>
+			  	
+				  	<div class="layui-input-inline" style="width:5%;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>	
+	</div>
+	
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions" style="width: 12% !important;">			
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>	
+		</div>
+	</div>
+	
+	<table class="layui-table" id="checkInfo"  lay-filter="demo"></table>
+
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-mini" lay-event="edit" title="编辑" style="background-color: #f8f8f8;color: #0099cc;">编辑</a>
+  <a class="layui-btn layui-btn-mini" lay-event="detail" style="background-color: #f8f8f8;color: #0099cc;font-weight: bold;">|</a>
+  <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del" title="删除" style="background-color: #f8f8f8;color: orangered;">删除</a>
+</script>
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+    <script src="../../js/pageJs/disEduBur/check.js"></script>
+    <script type="text/javascript">
+    	
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 21,
+   "data":[
+        {
+        		"xueqi":"2017-2018上学期",
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%"
+        },
+        {
+        	 "xueqi":"2017-2018上学期",
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+             "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+             "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+             "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        },
+        {
+            "schoolType":"小学 ",
+            "useRadio":"55%",
+            "groupLab":"60%",
+            "demoLab":"50%",
+            "xueqi":"2017-2018上学期"
+        }
+        
+    ]
+}

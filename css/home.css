@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+html,body {
+    /*font: normal 16px verdana;*/
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+body,table,em,input,select,textarea,form,p,h1,h2,li {
+    font-family: 'Microsoft Yahei', Verdana, Helvetica, sans-serif;
+    color: #000;
+    /*font-size: 16px;*/
+    font-weight: normal;
+}
+input{
+    outline:none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    font-family: 'Microsoft Yahei', Verdana, Helvetica, sans-serif;
+    text-decoration: none;!important;
+    color: #000;
+}
+a:focus{outline:none;}
+/*@media only screen and (max-width:960px){*/
+    /*body{*/
+        /*font-size:80%;*/
+    /*}*/
+/*}*/
+/*@media only screen and (min-width:960px){*/
+    /*body{*/
+        /*font-size:130%;*/
+    /*}*/
+/*}*/
+.bigBox{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    width: 100%;
+    height:50px;
+    margin: 0;
+    position:absolute;
+    z-index:5;
+    top:0;
+    font-family:"微软雅黑";
+}
+.title a:focus{
+    outline: none;
+}
+.titleImgBox{
+	width:155px;
+	height: 100%;
+    position: absolute;
+}
+.titleText{
+	width:280px;
+	height: 100%;
+    left: 190px;
+    line-height: 50px;
+	font-size: 28px;
+    position: absolute;
+}
+.UserOperation{
+
+    margin-top: 22px;
+    height: 20px;
+}
+.UserOperation tr td{
+    line-height: 20px;
+    font-size: 13px;
+}
+.loginNumber{
+    margin-right: 15px;
+}
+.userInfo{
+	width:460px;
+	height: 100%;
+    right: 0px;
+    position: absolute;
+}
+.userInfo a{
+	font-size:13px;
+	color: #000000;
+}
+.userInfo a:hover{
+    cursor: pointer;
+	text-decoration: underline;
+	color: #4294DE;
+}
+.userInfo3{
+    float: right;
+    width:auto;
+    height:23px;
+    font-size:13px;
+    margin-right:10px;
+    color:#000;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.userInfo3Box{
+    width:15px;
+    height:14px;
+    float: left;
+    margin:2px 2px;
+    background: url('../images/power.png');
+    background-size: 100% 100%;
+}
+.userInfo2{
+    float: right;
+    width: auto;
+    height:23px;
+    font-size:13px;
+    margin-right: 20px;
+    color:#000;
+    position: absolute;
+    bottom:0px;
+    right:85px;
+}
+.userInfo2Box{
+    width:13px;
+    height:16px;
+    float: left;
+    margin: 0px 3px;
+    background: url('../images/lock.png');
+    background-size: 100% 100%;
+}
+.userInfo1{
+    width: auto;
+    height:23px;
+    font-size:13px;
+    margin-right:20px;
+    color:#000;
+    position: absolute;
+    bottom: 0px;
+
+}
+.userInfo1Box{
+    width:16px;
+    height: 16px;
+    float: left;
+    margin: 0px 3px;
+    background: url('../images/user.png');
+    background-size: 100% 100%;
+}
+.nav{
+    width: 100%;
+    height:35px;
+    background: #3669AA;
+    position:absolute;
+    z-index:99;
+    top:50px;
+}
+.navUl{
+    list-style: none;
+   height: 35px;
+}
+.navLi{
+    float: left;
+    color: white;
+    height:35px;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.navLi:hover{
+	background: #3B7CB4;
+}
+.navLi a{
+    display: inline-block;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    padding:0px 30px;
+    font-size: 16px;
+    text-align:center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.navLi a:focus{
+    outline:none;
+}
+.navLi a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.navLi a:active{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.navLi a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.navLi a:link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.delimiter{
+	float: left;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    height: 16px;
+    width: 2px;
+    background: url('../images/v2_05.png');
+    background-size: 100% 100%;
+}
+.platformBody{
+	width: 100%;
+	/*float: left;*/
+    position:absolute;
+    z-index:20;
+    top:86px;
+    border-top: 1px solid white;
+    bottom: 0;
+}
+/*菜单栏*/
+.main-sidebar{
+    height:100%;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.sidebar-menu {
+    height:100%;
+    width: 100%;
+    float: left;
+    background-color: #29435E;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: relative;
+    }
+.showUp{
+    display: block;
+}
+.sidebar-menu > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #356CA6;
+    /*display: none;*/
+}
+.sidebar-menu > li > a {
+    padding: 13px 5px 9px 15px;
+    display: block;
+    border-bottom: 3px solid transparent;
+    color: #b8c7ce; 
+    text-decoration: none;
+}
+.sidebar-menu > li > a > .fa {
+	color: #6EDCFF;
+	font-size: 17px;
+	margin-right: 5px;
+    width: 20px; }
+.sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+    color: #fff;
+    background: #356CA6;
+    border-left-color: #3c8dbc; 
+    text-decoration: none;
+}
+.sidebar-menu > li > .treeview-menu {
+    margin: 0 1px;
+    background: #25456E; }
+.sidebar-menu > li .label,
+.sidebar-menu > li .badge {
+    margin-top: 3px;
+    margin-right: 2px;}
+.sidebar-menu li.header {
+    width: 100%;
+    color: whitesmoke;
+    background: #264271;
+}
+.menuMng{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height:50px;
+    font-size: 15px;
+    /*border: 1px solid red;*/
+}
+.sidebar-menu li > a > .fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.sidebar-menu li.active > a > .fa-angle-left {
+    transform: rotate(-90deg); 
+}
+.sidebar-menu li.active > .treeview-menu {
+    display: block;
+}
+.sidebar-menu a {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+.sidebar-menu .treeview{
+	background:#29435E ;
+    /*display: none;*/
+}
+.sidebar-menu .treeview a{
+    outline: none;
+}
+.sidebar-menu .treeview a span{
+	font-size: 15px;
+	color: #CFD4DB;
+} 
+.sidebar-menu .treeview-menu {
+    display: none;
+    list-style: none;
+    /*padding: 0;*/
+    margin: 0;
+    padding-left: 5px;
+}
+.sidebar-menu .treeview-menu .treeview-menu {
+    padding-left: 20px;
+}
+.sidebar-menu .treeview-menu > li {
+    margin-left:10px;
+    font-size: 15px;
+}
+.sidebar-menu .treeview-menu > li {
+	text-decoration: none;
+    padding: 5px 5px 5px 15px;
+    display: block;
+    font-size: 14px;
+    color: #4B9FFD;
+    font-family: '微软雅黑';
+    cursor: pointer;
+}
+.sidebar-menu .treeview-menu > li > .fa {
+    width: 20px;
+    color: #FE6515;
+}
+.sidebar-menu .treeview-menu > li > .fa-angle-left,
+.sidebar-menu .treeview-menu > li > .fa-angle-down {
+    width: auto;
+}
+.treeview-menu li:hover{
+    color: #fff;
+}
+#back_btn{
+	width: 25px;
+	height:25px;
+    position: absolute;
+    top:15px;
+    left: -30px;
+    display: none;
+}
+.sidebar{
+    width: 220px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #29435E;
+    /*border: 1px solid red;*/
+}
+/*右侧内容*/
+.right_container{
+    /*width: 100%;*/
+    height: 100%;
+    margin-left: 0px;
+    /*border: 2px solid blue;*/
+    /*background: darkgrey;*/
+}

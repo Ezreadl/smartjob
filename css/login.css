@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+input{
+	outline:none;
+}
+@media only screen and (max-width:960px){
+	body{
+		font-size:80%;
+	}
+}
+input:-webkit-autofill {
+	/*-webkit-box-shadow: 0 0 0px 1000px white inset;*/
+	/*border: 1px solid #CCC!important;*/
+	background: #FAFAFA;!important;
+}
+.bigBox{
+	margin: 0;
+	padding: 0;
+}
+.title{
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	position:absolute;
+	z-index:5;
+	top:0;
+	font-family:"微软雅黑";
+}
+.titleImgBox{
+	width:154px;
+	height: 100%;
+	position: absolute;
+}.titleText{
+	 width:280px;
+	 height: 100%;
+	 left: 190px;
+	 line-height: 50px;
+	 font-size: 28px;
+	 position: absolute;
+ }
+.loginBody{
+	width: 100%;
+	/*height: 81%;*/
+	/*float: left;*/
+	background: #1E64A9;
+	top:50px;
+	position:absolute;
+	z-index:10;
+	bottom:40px;
+}
+.loginPicBox{
+	width: 57%;
+	height:80%;
+	float: left;
+}
+.loginInBox{
+	width: 43%;
+	height:80%;;
+	float: left;
+}
+.loginPic{
+	float: right;
+	width:90%;
+	height: 90%;
+	margin:11% 0px ;
+	background: url(../images/v2_02.png);
+	background-size:100% 100%;
+}
+.loginBox{
+	width:54%;
+	height: 74%;
+	margin: 20% 10% 5% 10%;
+	border: 1px solid white;
+	border-radius: 8px;
+	background: white;
+}
+.loginTitleBox{
+	width: 88%;
+	height: 11%;
+	margin:8% auto 1.5%;
+	border-bottom: 1.5px solid #CCCCCC
+}
+.loginTitle{
+	width: 45%;
+	height: 100%;
+	font-size: 1.2em;
+	font-family: "微软雅黑";
+	/*line-height:100%;*/
+	border-bottom:2px solid #268ABC;
+	text-align: center;
+}
+.userName,.passWord{
+	width: 85%;
+	height: 80%;
+	margin-top:2%;
+	font-size: 0.9em;
+	border: none;
+	background: #FAFAFA;
+}
+.footer{
+	width: 100%;
+	height:40px;
+	font-size: 0.75em;
+	text-align: center;
+	line-height: 40px;
+	color: #373737;
+	position:absolute;
+	z-index:200;
+	bottom:0;
+}
+.verification{
+	width: 47%;
+	height:65%;
+	float: left;
+	background:#CCCCCC;
+}
+.verificationCode{
+	width: 47%;
+	height: 65%;
+	float: right;
+	font-size: 0.8em;
+	border: 1px solid #C4C4C4;
+}
+.submitBtn{
+	width:100%;
+	height:100%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size:1.1em;
+	color: white;
+	background: #EF4921;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+}
+.submitBtn:hover{
+	background: #EF5B3A;
+}
+

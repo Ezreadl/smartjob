@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频回看</title>
+		<link rel="stylesheet" type="text/css" href="../../plugins/layui/css/layui.css"/>
+		<style type="text/css">
+			body,html{
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+		
+			.bigdiv{
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+			}
+			.content{
+				float: left;
+				box-sizing: border-box;
+			}
+			.content:nth-of-type(1){
+				width: 40%;
+				height: 100%;
+				border: 3px solid #eeeeee;
+				padding: 10px 0px 0px 0px;
+			}
+			.content:nth-of-type(2){
+				width: 60%;
+				height: 100%;
+				position: relative;
+				padding: 0px 0px 0px 10px;
+				border: 2px solid #336699;
+			}
+			.layui-form-label{
+				width: 70px !important;
+			}
+			.layui-input-block{
+				margin-left: 80px !important;
+			}
+			.layui-form-label{
+				padding: 0px !important;
+			}
+			.layui-form-item{
+				margin-bottom: 5px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigdiv">
+			<div class="content">
+				<form class="layui-form" action="">
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">学校</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="分水中学" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">班级</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="2013级2班" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">授课教师</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="杨某某" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">开课时间</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="2017年11月12日星期三上午9:00-11:00" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">实验室类型</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="物理实验室" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">开设组数</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="6" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			   <div class="layui-form-item">
+			    <label class="layui-form-label">授课内容</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="酸与碱的反应" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			    <div class="layui-form-item layui-form-text">
+				    <label class="layui-form-label">实验评价</label>
+				    <div class="layui-input-block">
+				      <textarea name="desc" placeholder="该教师上课认真为同学解答问题" class="layui-textarea"></textarea>
+				    </div>
+				  </div>		  
+			</form>
+			</div>
+			<div class="content">
+				<video style="width: 100%;height: 100%;" controls>
+				  
+				</video>
+			</div>
+		</div>		
+		<script src="../../plugins/layui/layui.all.js"></script>
+	</body>
+</html>

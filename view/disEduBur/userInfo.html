@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用户信息管理</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/pageCss/zzsc.css"/>
+	<style type="text/css">
+		body,html{
+			overflow-y: hidden;
+		}
+	</style>
+</head>
+<body>
+
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+  <ul class="layui-tab-title">
+    <li class="layui-this" lay-id="num1">巡查员</li>
+    <li lay-id="num2">学校管理员</li>
+    <li lay-id="num3">实验员</li>
+    <li lay-id="num4">实验监督员</li>
+    <li lay-id="num5">教师</li>
+  </ul>
+  <div class="layui-tab-content" style="height: 90%;">
+    <div class="layui-tab-item layui-show">
+    	<div class="tableHeader">
+				<div class="searchForm">
+					<form class="layui-form" action="" style="height: 100%;">
+						 <div class="layui-form-item">
+						 	<div class="layui-input-inline" style="width:200px;">
+							    <label class="layui-form-label">学校类型</label>
+							    <div class="layui-input-block">
+							      <select name="city" lay-verify="required" lay-search="">
+							        <option value="0">全部</option>
+							        <option value="1">小学</option>
+							        <option value="2">初中</option>
+							        <option value="3">高中</option>
+							        <option value="4">九年一贯制</option>
+							        <option value="5">十二年一贯制</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	
+						  	<div class="layui-input-inline" style="width:250px;">
+						  		<div class="layui-input-block" style="margin-left:10px !important;">
+							      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+							    </div>
+						  	</div>
+						 </div>
+						 
+					</form>
+				</div>
+		
+				<div class="tableOptions">
+					<button class="newCreate" id="download">
+						<i class="fa fa-download"></i>
+						<span>导出</span>
+					</button>
+					<button class="newCreate" id="upload">
+						<i class="fa fa-upload"></i>
+						<span>导入</span>
+					</button>
+					<button class="newCreate" id="newBuild" data-method="notice">
+						<i class="fa fa-plus"></i>
+						<span>添加</span>
+					</button>		
+				</div>
+				
+		</div>		
+			<table id="userInfo1" lay-filter="test"></table>
+    </div>
+    <div class="layui-tab-item">
+    	<div class="tableHeader">
+				<div class="searchForm">
+					<form class="layui-form" action="" style="height: 100%;">
+						 <div class="layui-form-item">
+						 	<div class="layui-input-inline" style="width:200px;">
+							    <label class="layui-form-label">学校类型</label>
+							    <div class="layui-input-block">
+							      <select name="city" lay-verify="required" lay-search="">
+							        <option value="0">全部</option>
+							        <option value="1">小学</option>
+							        <option value="2">初中</option>
+							        <option value="3">高中</option>
+							        <option value="4">九年一贯制</option>
+							        <option value="5">十二年一贯制</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	
+						  	<div class="layui-input-inline" style="width:250px;">
+						  		<div class="layui-input-block" style="margin-left:10px !important;">
+							      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+							    </div>
+						  	</div>
+						 </div>
+						 
+					</form>
+				</div>
+		
+				<div class="tableOptions">
+					<button class="newCreate" id="download">
+						<i class="fa fa-download"></i>
+						<span>导出</span>
+					</button>
+					<button class="newCreate" id="upload">
+						<i class="fa fa-upload"></i>
+						<span>导入</span>
+					</button>
+					<button class="newCreate" id="newBuild" data-method="notice">
+						<i class="fa fa-plus"></i>
+						<span>添加</span>
+					</button>		
+				</div>
+				
+		</div>		
+			<table id="userInfo2" lay-filter="test"></table>
+    </div>
+    <div class="layui-tab-item">
+    	<div class="tableHeader">
+				<div class="searchForm">
+					<form class="layui-form" action="" style="height: 100%;">
+						 <div class="layui-form-item">
+						 	<div class="layui-input-inline" style="width:200px;">
+							    <label class="layui-form-label">学校类型</label>
+							    <div class="layui-input-block">
+							      <select name="city" lay-verify="required" lay-search="">
+							        <option value="0">全部</option>
+							        <option value="1">小学</option>
+							        <option value="2">初中</option>
+							        <option value="3">高中</option>
+							        <option value="4">九年一贯制</option>
+							        <option value="5">十二年一贯制</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	
+						  	<div class="layui-input-inline" style="width:250px;">
+						  		<div class="layui-input-block" style="margin-left:10px !important;">
+							      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+							    </div>
+						  	</div>
+						 </div>
+						 
+					</form>
+				</div>
+		
+				<div class="tableOptions">
+					<button class="newCreate" id="download">
+						<i class="fa fa-download"></i>
+						<span>导出</span>
+					</button>
+				</div>
+				
+		</div>		
+			<table id="userInfo3" lay-filter="test"></table>
+    </div>
+    <div class="layui-tab-item">
+    	<div class="tableHeader">
+				<div class="searchForm">
+					<form class="layui-form" action="" style="height: 100%;">
+						 <div class="layui-form-item">
+						 	<div class="layui-input-inline" style="width:200px;">
+							    <label class="layui-form-label">学校类型</label>
+							    <div class="layui-input-block">
+							      <select name="city" lay-verify="required" lay-search="">
+							        <option value="0">全部</option>
+							        <option value="1">小学</option>
+							        <option value="2">初中</option>
+							        <option value="3">高中</option>
+							        <option value="4">九年一贯制</option>
+							        <option value="5">十二年一贯制</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	
+						  	<div class="layui-input-inline" style="width:250px;">
+						  		<div class="layui-input-block" style="margin-left:10px !important;">
+							      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+							    </div>
+						  	</div>
+						 </div>
+						 
+					</form>
+				</div>
+		
+				<div class="tableOptions">
+					<button class="newCreate" id="download">
+						<i class="fa fa-download"></i>
+						<span>导出</span>
+					</button>
+				</div>
+				
+		</div>		
+			<table id="userInfo4" lay-filter="test"></table>
+    </div>
+    <div class="layui-tab-item">
+    	<div class="tableHeader">
+				<div class="searchForm">
+					<form class="layui-form" action="" style="height: 100%;">
+						 <div class="layui-form-item">
+						 	<div class="layui-input-inline" style="width:200px;">
+							    <label class="layui-form-label">学校类型</label>
+							    <div class="layui-input-block">
+							      <select name="city" lay-verify="required" lay-search="">
+							        <option value="0">全部</option>
+							        <option value="1">小学</option>
+							        <option value="2">初中</option>
+							        <option value="3">高中</option>
+							        <option value="4">九年一贯制</option>
+							        <option value="5">十二年一贯制</option>
+							      </select>
+							    </div>
+						  	</div>
+						  	
+						  	<div class="layui-input-inline" style="width:250px;">
+						  		<div class="layui-input-block" style="margin-left:10px !important;">
+							      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+							    </div>
+						  	</div>
+						 </div>
+						 
+					</form>
+				</div>
+		
+				<div class="tableOptions">
+					<button class="newCreate" id="download">
+						<i class="fa fa-download"></i>
+						<span>导出</span>
+					</button>
+				</div>
+				
+		</div>		
+			<table id="userInfo5" lay-filter="test"></table>
+    </div>
+  </div>
+</div> 
+ 
+
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-mini" lay-event="edit" title="编辑" style="background-color: #f8f8f8;color: #0099cc;">编辑</a>
+  <a class="layui-btn layui-btn-mini" lay-event="detail" style="background-color: #f8f8f8;color: #0099cc;font-weight: bold;">|</a>
+  <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del" title="删除" style="background-color: #f8f8f8;color: orangered;">删除</a>
+</script>
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+    <script src="../../js/pageJs/disEduBur/userInfo.js"></script>  
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

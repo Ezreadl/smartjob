@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>table模块快速使用</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>	
+
+</head>
+
+<body>
+	<div class="searchItem">
+		<i class="layui-icon">&#xe615;</i> 
+		搜索条件
+	</div>
+	<div class="tableHeader">
+		
+		<div class="searchForm">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">
+				 	<div class="layui-input-inline" style="width:200px;">
+					    <label class="layui-form-label">学校类型</label>
+					    <div class="layui-input-block">
+					      <select name="city" lay-verify="required" lay-search="">
+					        <option value="0">全部</option>
+					        <option value="1">小学</option>
+					        <option value="2">初中</option>
+					        <option value="3">高中</option>
+					        <option value="4">九年一贯制</option>
+					        <option value="5">十二年一贯制</option>
+					      </select>
+					    </div>
+				  	</div>
+				  	
+				  	<div class="layui-input-inline" style="width:250px;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>
+	</div>
+
+	<div class="searchItem" style="width: 100%;float: left;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions">
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>
+		</div>
+		
+	</div>
+	
+	<table class="layui-table" id="labInfo"  lay-filter="demo"></table>
+
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+    <script src="../../js/pageJs/disEduBur/labInfo.js"></script>
+    
+    <script type="text/html" id="stateTpl">
+		  {{#  if(d.useRatio){ }}
+				<span style="color: #0099cc;font-weight: 600;">{{ d.useRatio }}</span>
+		  {{#  } else { }}
+
+		  {{#  } }}	  
+	</script>
+
+</body>
+
+</html>

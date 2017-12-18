@@ -1,0 +1,25 @@
+#video{
+	width: 100%;
+	height: 84%;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+}
+#video .point{
+	height: 100%;
+	float: left;
+	padding: 20px;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+#video .point:first-child{
+	width: 45%;
+	border: 4px solid #ddd;
+	margin-right: 10px;
+}
+#video .point:nth-child(2){
+	width: 53%;
+	background-color: #000000;
+}
+.layui-form-item{
+	margin-bottom: 5px !important;
+}

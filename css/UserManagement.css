@@ -1,0 +1,147 @@
+
+.userBox{
+    width: 100%;
+    /*margin-top: 10px;*/
+    /*left: 50%;*/
+    /*margin-left: -49%;*/
+    height: auto;
+    background: white;
+    /*display: none;*/
+    position: absolute;
+}
+.userTable{
+    margin-top: 10px;
+    height: 75%;
+}
+table tr th,td{
+    text-align: center;
+}
+.paging{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    margin-top:10px;
+    font-size: 17px;
+}
+.paging span{
+    margin: 6px;
+}
+.modal-title{
+    font-weight: bolder;
+    font-family: "宋体";
+}
+.search{
+    width:100%;
+    height:23px;
+    border-bottom: 2px solid #3669AA;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.search i{
+    color: #3669AA;
+    font-size: 18px;
+    margin-right:6px;
+}
+.searchResult{
+    width:100%;
+    height:28px;
+    border-bottom:2px solid #3669AA;
+    color: black;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.resultTitle i{
+    color: #3669AA;
+    font-size: 18px;
+    margin-right:6px;
+}
+.resultTitle{
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.form-inline input{
+    height:30px;
+}
+.fa-sign-in{
+    color: #54B8E6;
+}
+.searchForm{
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.searchBtn{
+    width: 60px;
+    height:27px;
+}
+.Condition1 {
+    width: 150px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius:4px;
+    margin-right: 20px;
+}
+.Condition1:focus{
+    border:1px solid #03a9f4;
+    box-shadow: 0 0 2px #03a9f4;
+    border-radius:4px;
+}
+.Condition2{
+    width:150px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.Condition2:focus{
+    border:1px solid #03a9f4;
+    box-shadow: 0 0 2px #03a9f4;
+    border-radius:4px;
+}
+.btnGroup0{
+    border:1px solid #C5C5C5;
+    float: right;
+}
+.btn0{
+    padding: 4px 12px;
+    float: left;
+    color: black;
+    font-size:13px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn0:hover{
+    background: #F6F6F6;
+}
+.rightBorder{
+    border-right: 1px solid #C5C5C5;
+}
+.fa-plus{
+    color:#32A329;
+}
+.fa-pencil{
+    color:#F89B4A;
+}
+.fa-clone{
+    color:#54B8E6;
+}
+.fa-times{
+    color: red;
+}
+.fa-reply-all{
+    color: #D5A151;
+}
+
+.addBox{
+    width: 90%;
+    left:50%;
+    margin-left: -45%;
+    text-align: left;
+    margin-top: 10px;
+    height: 500px;
+    position: absolute;
+    display: none;
+}

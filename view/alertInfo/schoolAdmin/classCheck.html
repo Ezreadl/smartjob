@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../plugins/layui/css/layui.css" media="all">
+	</head>
+	<body>
+		<form class="layui-form" style="margin: 30px 40px 0px 0px;">
+			 <div class="layui-form-item">
+			    <label class="layui-form-label">实验员审批</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="title" required  lay-verify="required" placeholder="同意" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			
+			
+			<div class="layui-form-item">
+				<label class="layui-form-label">我的审批</label>
+		    <div class="layui-input-block">
+		      <input type="radio" name="agree" value="同意" title="同意" checked="">
+		      <input type="radio" name="agree" value="不同意" title="不同意">
+		    </div>
+		  </div>	
+		   <div class="layui-form-item layui-form-text">
+		    <label class="layui-form-label">不同意理由</label>
+		    <div class="layui-input-block">
+		      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <div class="layui-input-block">
+		      <button class="layui-btn" lay-submit="" lay-filter="demo1">提交</button>
+		    </div>
+		  </div>
+				  
+		</form>
+	<script src="../../../plugins/layui/layui.all.js"></script>	
+	</body>
+</html>

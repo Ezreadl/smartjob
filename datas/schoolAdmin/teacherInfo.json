@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 21,
+   "data":[
+        {
+            "grade":"三年级",
+            "class":"二班",
+            "totalPeople":"60",
+            "subjectName":"科学实验室1",
+            "labType":"小学实验室",
+            "place":"新实验楼301",
+            "useRatio":"45%"
+        }
+    ]
+}
