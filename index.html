@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>基于 Layui form 组件的省市区联动选择的实现</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+	</head>
+
+	<body>
+		<div style="width:900px;margin:50px auto;">
+			<form class="layui-form">
+				<div class="layui-form-item">
+					<label class="layui-form-label">选择地区</label>
+					    <div class="layui-input-block">
+						<select name="provid" id="provid" lay-filter="provid">
+							<option value="">请选择省</option>
+						</select>
+					</div>
+					<div class="layui-input-inline">
+						<select name="cityid" id="cityid" lay-filter="cityid">
+							<option value="">请选择市</option>
+						</select>
+					</div>
+					<div class="layui-input-inline">
+						<select name="areaid" id="areaid" lay-filter="areaid">
+							<option value="">请选择县/区</option>
+						</select>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/province.js"></script>
+	<script src="js/index.js"></script>
+
+</html>
