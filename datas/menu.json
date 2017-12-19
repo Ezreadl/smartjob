@@ -6,7 +6,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./view/disEduBur/course.html",
+            "url":"./disEduBur/course.html",
             "menuID":13,
             "menuName":"课堂中心"
         },
@@ -15,7 +15,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./view/disEduBur/labInfo.html",
+            "url":"./disEduBur/labInfo.html",
             "menuID":1,
             "menuName":"实验室利用率"
         },
@@ -27,7 +27,7 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./view/disEduBur/schoolInfo.html",
+                    "url":"./disEduBur/schoolInfo.html",
                     "menuID":2,
                     "menuName":"学校信息管理"
                 },
@@ -36,7 +36,7 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./view/disEduBur/xueqi.html",
+                    "url":"./disEduBur/xueqi.html",
                     "menuID":3,
                     "menuName":"学期信息管理"
                 },
@@ -45,7 +45,7 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./view/disEduBur/teachList.html",
+                    "url":"./disEduBur/teachList.html",
                     "menuID":4,
                     "menuName":"教学目录管理"
                 },
@@ -54,7 +54,7 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./view/disEduBur/teachPlan.html",
+                    "url":"./disEduBur/teachPlan.html",
                     "menuID":5,
                     "menuName":"教学目标配置"
                 },
@@ -63,7 +63,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./view/disEduBur/userInfo.html",
+            "url":"./disEduBur/userInfo.html",
             "menuID":7,
             "menuName":"用户信息管理"
         }
@@ -79,7 +79,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./view/controlPeople/check.html",
+            "url":"./controlPeople/check.html",
             "menuID":8,
             "menuName":"课程预约记录(区监督员)"
         },
@@ -88,7 +88,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/schoolAdmin/schoolCheck.html",
+            "url":"./schoolAdmin/schoolCheck.html",
             "menuID":9,
             "menuName":"调课审批(学校admin)"
         },
@@ -97,7 +97,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/schoolAdmin/schoolBasic.html",
+            "url":"./schoolAdmin/schoolBasic.html",
             "menuID":10,
             "menuName":"基础信息管理(学校admin)"
         },
@@ -106,7 +106,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/schoolAdmin/schoolLab.html",
+            "url":"./schoolAdmin/schoolLab.html",
             "menuID":14,
             "menuName":"实验室利用率"
         },
@@ -115,7 +115,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/labPeople/orderList.html",
+            "url":"./labPeople/orderList.html",
             "menuID":11,
             "menuName":"预约审批(实验员)"
         },
@@ -124,7 +124,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/teacher/myCourse.html",
+            "url":"./teacher/myCourse.html",
             "menuID":12,
             "menuName":"我的课程(教师)"
         },
@@ -133,7 +133,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/disEduBur/courseCharts.html",
+            "url":"./disEduBur/courseCharts.html",
             "menuID":15,
             "menuName":"巡课1"
         },
@@ -142,7 +142,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/disEduBur/courseCharts1.html",
+            "url":"./disEduBur/courseCharts1.html",
             "menuID":16,
             "menuName":"巡课2"
         },
@@ -151,7 +151,7 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./view/disEduBur/xunping.html",
+            "url":"./disEduBur/xunping.html",
             "menuID":17,
             "menuName":"视频巡查"
         }
