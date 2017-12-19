@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频回看</title>
+		<link rel="stylesheet" type="text/css" href="../../../plugins/layui/css/layui.css"/>
+        <style>
+            .layui-this{
+                color: #009688 !important;
+                font-weight: bold !important;
+            }
+        </style>
+	</head>
+	<body>
+	</head>
+<body>
+        <div class="layui-tab layui-tab-card" lay-filter="courseCharts">
+        <ul class="layui-tab-title">
+            <li class="layui-this" lay-id="num1">班级实验完成率</li>
+            <li lay-id="num2">学科实验完成率</li>
+
+        </ul>
+        <div class="layui-tab-content" style="height: 60%;" >
+            <div class="layui-tab-item layui-show">
+                <table class="layui-table" id="classReport"></table>
+            </div>
+            <div class="layui-tab-item">
+               <table class="layui-table"  id="courseReport"></table>
+            </div>
+        </div>
+        </div>
+
+		<script src="../../../plugins/layui/layui.all.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+        <script src="../../path.js"></script>
+        <script src="../../../js/pageJs/teacher/myLabCourse.js"></script>	
+
+	</body>
+</html>

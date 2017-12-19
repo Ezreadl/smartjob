@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../plugins/layui/css/layui.css" media="all">
+		<style type="text/css">
+			.layui-btn{
+				font-size: 16px !important;
+				padding: 0px 12px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="layui-form" id="nCreate" style="margin: 30px 40px 0px 0px;">
+					<div class="layui-form-item">
+			    	<label class="layui-form-label">学校名称</label>
+			    		<div class="layui-input-block">
+			      		<input type="text" name="organName" id="organName" required  lay-verify="required"  autocomplete="off" class="layui-input">
+			    	</div>
+			  		</div>
+			  		<div class="layui-form-item">
+				    <label class="layui-form-label">学校类型</label>
+				    <div class="layui-input-block" >
+				    <select name="sType" lay-verify="required" id="organType">
+				    	<option value=""></option>
+					    <option value="0">小学</option>
+					    <option value="1">初中</option>
+					    <option value="2">高中</option>
+				    </select>
+				  </div>
+				</div>				
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">点位操作</label>
+			    		<div class="layui-input-block">
+			      		<input type="checkbox" name="locationUrl" checked="checked" id="locationUrl" lay-skin="switch" lay-text="关闭|开启" >
+			    	</div>
+			  	</div>
+			  	<div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <button class="layui-btn" lay-submit lay-filter="formDemo" id="laySubmit">提交</button>
+				    </div>
+				  </div>
+			</form>
+	<script src="../../../plugins/layui/layui.all.js"></script>	
+	<script src="../../../js/jquery.min.js"></script>
+	</body>
+</html>

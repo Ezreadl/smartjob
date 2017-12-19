@@ -3,99 +3,23 @@ $(function(){
 		cache: false
 	});
 	var option1 = {
-	  elem: '#userInfo1' 
+	  elem: '#userInfo' 
 	  ,even: true
 	  ,limits: [20,30,50]
   	  ,limit: 20 //默认采用20
-	  ,height:"full-120" //容器高度
-	  ,url:'../../datas/sUser.json'
+	  ,height:"full-150" //容器高度
+	  ,url:path_way.allUserInfo1
 	  ,page:true
 	  ,cols: [[
-	  			{field:'schoolName',title:'学校名称'},
-	  			{field:'schoolAccount',sort: true,title:'巡查员账户'},
-	  			{field:'schoolpsw',title:'密码'},
-	  			{field:'userName',title:'姓名'},
-	  			{field:'position',title:'职务',},
+	  			{field:'schoolName',title:'组织机构'},
+	  			{field:'userName',sort: true,title:'账户'},
+	  			{field:'userPwd',title:'密码',templet:"#PSW"},
+	  			{field:'trueName',title:'姓名'},
+	  			{field:'resign',title:'角色',},
 	  			{field:'contactWay',title:'联系方式'},
-	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
+	  			{fixed: 'right',width:200,align:'center', toolbar: '#barDemo',title:'操作'}
 	  ]]//设置表头  
 	};
-	
-	var option2 = {
-		elem: '#userInfo2' 
-	  ,even: true
-	  ,limits: [20,30,50]
-  	  ,limit: 20 //默认采用20
-	  ,height:"full-120" //容器高度
-	  ,url:'../../datas/sUser1.json'
-	  ,page:true
-	  ,cols: [[
-	  			{field:'schoolName',title:'学校名称'},
-	  			{field:'schoolAccount',sort: true,title:'学校管理员账户'},
-	  			{field:'schoolpsw',title:'密码'},
-	  			{field:'userName',title:'姓名'},
-	  			{field:'position',title:'职务',},
-	  			{field:'contactWay',title:'联系方式'},
-	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
-	  ]]//设置表头  
-	};
-	
-	var option3={
-	  elem: '#userInfo3' 
-	  ,even: true
-	  ,limits: [20,30,50]
-  	  ,limit: 20 //默认采用20
-	  ,height:"full-120" //容器高度
-	  ,url:'../../datas/sUser.json'
-	  ,page:true
-	  ,cols: [[
-	  			{field:'schoolName',title:'学校名称'},
-	  			{field:'schoolAccount',sort: true,title:'实验员账户'},
-	  			{field:'schoolpsw',title:'密码'},
-	  			{field:'userName',title:'姓名'},
-	  			{field:'position',title:'职务',},
-	  			{field:'contactWay',title:'联系方式'}
-//	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
-	  ]]//设置表头  
-	};
-	
-	var option4={
-	  elem: '#userInfo4' 
-	  ,even: true
-	  ,limits: [20,30,50]
-  	  ,limit: 20 //默认采用20
-	  ,height:"full-120" //容器高度
-	  ,url:'../../datas/sUser.json'
-	  ,page:true
-	  ,cols: [[
-	  			{field:'schoolName',title:'学校名称'},
-	  			{field:'schoolAccount',sort: true,title:'实验监督员账户'},
-	  			{field:'schoolpsw',title:'密码'},
-	  			{field:'userName',title:'姓名'},
-	  			{field:'position',title:'监督学校类型',},
-	  			{field:'contactWay',title:'联系方式'}
-//	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
-	  ]]//设置表头  
-	};
-	
-	var option5={
-	  elem: '#userInfo5' 
-	  ,even: true
-	  ,limits: [20,30,50]
-  	  ,limit: 20 //默认采用20
-	  ,height:"full-120" //容器高度
-	  ,url:'../../datas/sUser.json'
-	  ,page:true
-	  ,cols: [[
-	  			{field:'schoolName',title:'学校名称'},
-	  			{field:'schoolAccount',sort: true,title:'教师账户'},
-	  			{field:'schoolpsw',title:'密码'},
-	  			{field:'userName',title:'姓名'},
-	  			{field:'position',title:'所教学科',},
-	  			{field:'contactWay',title:'联系方式'}
-//	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
-	  ]]//设置表头  
-	}
 	
 layui.use(['laypage', 'layer', 'table','form','element'], function(){
 	
@@ -106,25 +30,11 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
   ,element = layui.element; //元素操作
   
   table.render(option1);
-  element.on('tab(docDemoTabBrief)', function(data){
-	if(this.getAttribute('lay-id')=='num1'){
-		table.render(option1);
-	}else if(this.getAttribute('lay-id')=='num2'){
-		table.render(option2);		
-	}else if(this.getAttribute('lay-id')=='num3'){
-		table.render(option3);		
-	}else if(this.getAttribute('lay-id')=='num4'){
-		table.render(option4);		
-	}else{
-		table.render(option5);	
-	}
-		
-});
 	
 	//监听工具条
   table.on('tool(test)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
     var data = obj.data //获得当前行数据
-    ,layEvent = obj.event; //获得 lay-event 对应的值
+    ,layEvent = obj.event; //获得 lay-event 对应的值  
     if(layEvent === 'del'){
       layer.confirm('真的删除行么', function(index){
         obj.del(); //删除对应行（tr）的DOM结构       
@@ -132,21 +42,126 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
         //向服务端发送删除指令
       });
     } else if(layEvent === 'edit'){
+ 
+    		var schoolName=obj.data.schoolName;
+      		var userName = obj.data.userName;
+      		var userPwd = obj.data.userPwd;
+      		var trueName = obj.data.trueName;
+      		var resign = obj.data.resign;
+      		var contactWay = obj.data.contactWay;
+      		
       		parent.layer.open({
     		type: 2,
-    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','340px'],
+    		title: ["+新建信息","font-size:16px"], //不显示标题栏   title : false/标题
+	      	area: ['400px','460px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
 	      	maxmin:true,
-	     	id: 'LAY_layuipro', //设定一个id，防止重复弹出
+	     	id: 'PeopleInfo', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
-	     	
-    	})
+	     	content:'./alertInfo/disEduBur/createPeopleInfo.html',
+	     	success:function(layero, index){
+	     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+				iframeWin.$("#Organization").attr("value",schoolName);
+				iframeWin.$("#Account").attr("value",userName);
+				iframeWin.$("#password").attr("value","******");
+				iframeWin.$("#peopleName").attr("value",trueName);
+				iframeWin.$("#contactWay").attr("value",contactWay);
+				
+				var index = parent.layer.getFrameIndex(window.name);
+				iframeWin.$("#laySubmit").click(function(){
+					if(iframeWin.$("#Organization").val()==""){
+
+					}else if(iframeWin.$("#Account").val()==""){
+
+					}else if(iframeWin.$("#password").val()==""){
+
+					}else if(iframeWin.$("#peopleName").val()==""){
+		
+					}else if(iframeWin.$("#position").val()==""){
+				
+					}else if(iframeWin.$("#contactWay").val()==""){
+						
+					}else{
+						$.ajax({
+						type:"get",
+						url:path_way.allUserInfo2,
+						dataType:"json",
+						data:iframeWin.$("#peopleCreate").serialize(),
+						success:function(data){							
+							
+							table.reload("userInfo",{});
+							
+							parent.layer.closeAll('iframe');
+						}
+					});
+				}
+					
+			})
+				
+	     	}
+    	});
+   	
     }
+    
+//  添加
+	$("#newBuild").click(function(){	     		
+      		parent.layer.open({
+    		type: 2,
+    		title: ["+新建信息","font-size:16px"], //不显示标题栏   title : false/标题
+	      	area: ['400px','460px'],
+	      	shade: 0.8,
+	      	anim:2,
+	      	skin: 'layui-layer-lan',
+	      	maxmin:true,
+	     	id: 'addInfo', //设定一个id，防止重复弹出
+	      	resize: false,
+	     	moveType: 1, //拖拽模式，0或者1
+	     	content:'./alertInfo/disEduBur/createPeopleInfo.html',
+	     	success:function(layero, index){
+	     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+				
+				iframeWin.$("#laySubmit").click(function(){
+					if(iframeWin.$("#Organization").val()==""){
+
+					}else if(iframeWin.$("#Account").val()==""){
+
+					}else if(iframeWin.$("#password").val()==""){
+
+					}else if(iframeWin.$("#peopleName").val()==""){
+		
+					}else if(iframeWin.$("#position").val()==""){
+				
+					}else if(iframeWin.$("#contactWay").val()==""){
+						
+					}else{
+						$.ajax({
+						type:"get",
+						url:"../../datas/sUser.json",
+						dataType:"json",
+						data:iframeWin.$("#peopleCreate").serialize(),
+						success:function(data){							
+							
+							table.reload("userInfo",{});
+							
+							parent.layer.closeAll('iframe');
+						}
+					});
+				}
+					
+			})
+				
+	     	}
+    	});
+   	
+    
+	})
+
+    
+    
+    
   });
 	
 	

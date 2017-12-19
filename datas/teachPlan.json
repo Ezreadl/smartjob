@@ -1,113 +1,61 @@
 {
   "code": 0,
   "msg": "",
-  "count": 21,
-   "data":[
+  "count": 6,
+    "data":[
         {
-        		"xueqi":"2017-2018上学期",
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%"
+            "courseRate":"46",
+            "courseRateId":29,
+            "demoCourseRate":"49",
+            "demoCourseRateId":90,
+            "schoolType":"小学",
+            "targetUsedRate":"42",
+            "targetUsedRateId":26
         },
         {
-        	 "xueqi":"2017-2018上学期",
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%"
+            "courseRate":"50",
+            "courseRateId":30,
+            "demoCourseRate":"50",
+            "demoCourseRateId":91,
+            "schoolType":"初中",
+            "targetUsedRate":"50",
+            "targetUsedRateId":27
         },
         {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
+            "courseRate":"50",
+            "courseRateId":31,
+            "demoCourseRate":"50",
+            "demoCourseRateId":92,
+            "schoolType":"高中",
+            "targetUsedRate":"50",
+            "targetUsedRateId":28
         },
         {
-             "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
+            "courseRate":"50",
+            "courseRateId":60,
+            "demoCourseRate":"50",
+            "demoCourseRateId":93,
+            "schoolType":"九年一贯制",
+            "targetUsedRate":"50",
+            "targetUsedRateId":59
         },
         {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
+            "courseRate":"50",
+            "courseRateId":62,
+            "demoCourseRate":"50",
+            "demoCourseRateId":94,
+            "schoolType":"完全中学",
+            "targetUsedRate":"50",
+            "targetUsedRateId":61
         },
         {
-             "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-             "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
-        },
-        {
-            "schoolType":"小学 ",
-            "useRadio":"55%",
-            "groupLab":"60%",
-            "demoLab":"50%",
-            "xueqi":"2017-2018上学期"
+            "courseRate":"50",
+            "courseRateId":64,
+            "demoCourseRate":"50",
+            "demoCourseRateId":95,
+            "schoolType":"十二年一贯制",
+            "targetUsedRate":"50",
+            "targetUsedRateId":63
         }
-        
     ]
 }

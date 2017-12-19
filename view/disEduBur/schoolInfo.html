@@ -78,17 +78,19 @@
 
     <script src="../../plugins/layui/layui.all.js"></script>
     <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
     <script src="../../js/pageJs/disEduBur/basic1.js"></script>
     
     <script type="text/html" id="auth">
-		  {{#  if(d.isShow==1){ }}
+		  {{#  if(d.locationUrl==1){ }}
 		  		<input type="checkbox" name="show" checked="checked" lay-skin="switch" lay-text="开启|关闭" lay-filter="isShow"/>
 		  {{#  } else { }}
 		   		<input type="checkbox" name="show" lay-skin="switch" lay-text="开启|关闭" lay-filter="isShow"/>
 		  {{#  } }}
 	</script>
-	<script type="text/javascript" id="course">
-		  {{#  if(d.course==1){ }}
+	
+	<script type="text/html" id="course">
+		  {{#  if(d.course == 1){ }}
 		  		<a href="javascript:;" lay-event="courseCharts" style="text-decoration:underline;color:#0099cc"><span>点击查看课表</span></a>
 		  {{#  } else { }}
 		   		

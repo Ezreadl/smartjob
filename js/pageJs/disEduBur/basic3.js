@@ -5,12 +5,12 @@ $(function(){
 	  ,limits: [20,30,50]
   	  ,limit: 20 //默认采用20
 	  ,height:"full-150" //容器高度
-	  ,url:'../../datas/teachList.json'
+	  ,url:path_way.teachList1
 	  ,page:true
 	  ,cols: [[
-	  			{field:'listName',sort: true, fixed: true,title:'教学目录名称'},
-	  			{field:'public',title:'版本'},
-	  			{field:'rightSchoolType', sort: true,title:'适用学校类型'},
+	  			{field:'name',sort: true, fixed: true,title:'教学目录名称'},
+	  			{field:'version',title:'版本'},
+	  			{field:'schoolTypeName', sort: true,title:'适用学校类型'},
 	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
 	  ]]//设置表头  
 	};
@@ -36,41 +36,9 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
         //向服务端发送删除指令
       });
     } else if(layEvent === 'edit'){
-      		parent.layer.open({
-    		type: 2,
-    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','340px'],
-	      	shade: 0.8,
-	      	anim:2,
-	      	skin: 'layui-layer-lan',
-	      	maxmin:true,
-	     	id: 'LAY_layuipro', //设定一个id，防止重复弹出
-	      	resize: false,
-	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
-	     	
-    	})
     }
   });
 
-	 
-	$('#newBuild').on('click', function(){
-    	parent.layer.open({
-    		type: 2,
-    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','340px'],
-	      	shade: 0.8,
-	      	anim:2,
-	      	skin: 'layui-layer-lan',
-	      	maxmin:true,
-	     	id: 'nBuild', //设定一个id，防止重复弹出
-	      	resize: false,
-	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
-	     	
-    	})
-    	
-    });
    
  });
 })

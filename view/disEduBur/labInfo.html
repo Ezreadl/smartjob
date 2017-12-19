@@ -3,67 +3,195 @@
 
 <head>
     <meta charset="utf-8">
-    <title>table模块快速使用</title>
+    <title>实验室利用率</title>
     <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>	
-
+	<style>
+		html,body{
+			overflow-y: auto !important;
+		}
+		.rankingCharts{
+			margin-top:15px;
+			width: 100%;
+			height: 400px;
+			box-sizing: border-box;
+			/*padding: 10px;*/
+			float: left;
+			border: 2px solid #eeeeee;
+		}
+		.searchItem{
+			width: 100%;
+			color: #0082df;
+			border-bottom: 2px solid #0082df;
+		}
+		.contentInfo{
+			width:100%;
+			height: auto;
+			max-height: 400px;
+			overflow-y: auto;
+		}
+		.contentBox{
+			width: 48%;
+			height: 40px;
+			margin: 2px 10px;
+			position: relative;
+			box-sizing: border-box;
+			float: left;
+			border-top: 1px solid #ddd;
+			border-bottom:1px solid #ddd;
+		}
+		.contentInfo .contentTitle:nth-child(1) ul li,.contentInfo .contentTitle:nth-child(2) ul li{
+			font-weight: bold;
+		}
+		.contentBox .border-left{
+			width: 1px;
+			height: 0px;
+			background: #009688;
+			position:absolute;
+			left:-1px;
+			bottom: 0;
+		}
+		.contentBox .border-bottom{
+			width: 0px;
+			height: 1px;
+			background: #009688;
+			position:absolute;
+			left:0;
+			bottom: 0px;
+		}
+		.contentBox .border-top{
+			width: 0px;
+			height: 1px;
+			background: #009688;
+			position:absolute;
+			right:0;
+			top: 0px;
+		}
+		.contentBox .border-right{
+			width: 1px;
+			height: 0px;
+			background: #009688;
+			position:absolute;
+			right:-1px;
+			top: 0;
+		}
+		.infoList{
+			width: 100%;
+			height: 100%;
+		}
+		.infoList li{
+			height: 100%;
+			float: left;
+			text-align: center;
+			color: #666666;
+			font-size: 13px;
+			line-height: 40px;
+		}
+		.infoList li:nth-child(1){
+			width: 8%;
+		}
+		.infoList li:nth-child(2){
+			width: 20%;
+		}
+		.infoList li:nth-child(3){
+			width: 20%;
+		}
+		.infoList li:nth-child(4){
+			width: 20%;
+		}
+		.infoList li:nth-child(5){
+			width: 17%;
+		}
+		.infoList li:nth-child(6){
+			width: 15%;
+		}
+		.layui-btn{
+			line-height: 0px;
+			font-size: 11px;
+			height: 23px !important;
+			background-color: #ffffff !important;
+			color: #666666;
+		}
+		.layui-btn:hover{
+			color: #009688;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="searchItem">
 		<i class="layui-icon">&#xe615;</i> 
-		搜索条件
-	</div>
-	<div class="tableHeader">
-		
-		<div class="searchForm">
-			<form class="layui-form" action="" style="height: 100%;">
-				 <div class="layui-form-item">
-				 	<div class="layui-input-inline" style="width:200px;">
-					    <label class="layui-form-label">学校类型</label>
-					    <div class="layui-input-block">
-					      <select name="city" lay-verify="required" lay-search="">
-					        <option value="0">全部</option>
-					        <option value="1">小学</option>
-					        <option value="2">初中</option>
-					        <option value="3">高中</option>
-					        <option value="4">九年一贯制</option>
-					        <option value="5">十二年一贯制</option>
-					      </select>
-					    </div>
-				  	</div>
-				  	
-				  	<div class="layui-input-inline" style="width:250px;">
-				  		<div class="layui-input-block" style="margin-left:10px !important;">
-					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
-					    </div>
-				  	</div>
-				 </div>
-				 
-			</form>
-		</div>
-	</div>
-
-	<div class="searchItem" style="width: 100%;float: left;">
-		<i class="layui-icon">&#xe62d;</i> 
-		查询结果
-		
-		<div class="tableOptions">
+		实验室使用率排名
+			<div class="tableOptions">
 			<button class="newCreate" id="download">
 				<i class="fa fa-download"></i>
 				<span>导出</span>
 			</button>
 		</div>
+	</div>
+	<div class="contentInfo">
+		<div class="contentBox contentTitle">					
+			<ul class="infoList">
+				<li>排名</li>
+				<li>学校名称</li>
+				<li>学校类型</li>
+				<li>实验室总数</li>
+				<li>实验室使用率</li>
+			</ul>
+		</div>
+		<div class="contentBox contentTitle">					
+			<ul class="infoList">
+				<li>排名</li>
+				<li>学校名称</li>
+				<li>学校类型</li>
+				<li>实验室总数</li>
+				<li>实验室使用率</li>
+				<li>详情</li>
+			</ul>
+		</div>
+
+		<div id="useList" style="width: 100%;height: 90%">
+			<!--<div class="contentBox">					-->
+				<!--<div class="border-left"></div>
+				<div class="border-bottom"></div>
+				<div class="border-top"></div>
+				<div class="border-right"></div>
+				<ul class="infoList">
+					<li>城西附小</li>
+					<li>小学</li>
+					<li>3个</li>
+					<li>60%</li>
+					<li><button class="layui-btn layui-btn-radius">查看更多</button></li>
+				</ul>-->
+			<!--</div>-->
+
+		</div>
+		
 		
 	</div>
 	
-	<table class="layui-table" id="labInfo"  lay-filter="demo"></table>
+	<div class="rankingCharts">
+		<div class="searchItem">
+		<i class="layui-icon"">&#xe62d;</i> 
+		本月实验室利用率Top10	
+	</div>
+		<div id="ranking10" style="height:83%;width: 100%"></div>
+	</div>
+	<div class="rankingCharts">
+		<div class="searchItem">
+		<i class="layui-icon"">&#xe62d;</i> 
+		本月实验室利用率Last10	
+	</div>
+		<div id="ranking10Last" style="height:83%;width: 100%"></div>
+	</div>
 
 
     <script src="../../plugins/layui/layui.all.js"></script>
     <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
     <script src="../../js/pageJs/disEduBur/labInfo.js"></script>
+	<script src="../../plugins/echarts-all.js"></script>
     
     <script type="text/html" id="stateTpl">
 		  {{#  if(d.useRatio){ }}

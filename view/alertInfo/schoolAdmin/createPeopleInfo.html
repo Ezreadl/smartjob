@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../plugins/layui/css/layui.css" media="all">
+		<style type="text/css">
+			.layui-btn{
+				font-size: 16px !important;
+				padding: 0px 12px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="layui-form" style="margin: 30px 40px 0px 0px;" id="userInfoAlert">
+					
+			  		<div class="layui-form-item">
+				    <label class="layui-form-label">账户</label>
+				    <div class="layui-input-block">
+				   <input type="text" name="userName" id="userName" required  lay-verify="required" placeholder="请输入账户" autocomplete="off" class="layui-input">
+				  </div>
+				</div>
+				<div class="layui-form-item">
+			    	<label class="layui-form-label">密码</label>
+			    		<div class="layui-input-block">
+			      		 <input type="password" name="userPassword" id="userPassword" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+			    	</div>
+			  		</div>
+				
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">姓名</label>
+			    		<div class="layui-input-block">
+			      		<input type="text" name="userNick" id="userNick" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+			    	</div>
+			  	</div>
+			  	
+			  	 <div class="layui-form-item">
+				    <label class="layui-form-label">职务</label>
+				    <div class="layui-input-block">
+				      <select name="position" lay-verify="required" id="position">
+				        <option value=""></option>
+				        <option value="0">实验员</option>
+				        <option value="1">实验监督员</option>
+				        <option value="1">教师</option>
+				      </select>
+				    </div>
+				  </div>
+			  	
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">联系方式</label>
+			    		<div class="layui-input-block">
+			      		<input type="text" name="telephone" id="telephone" required  lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input">
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <button class="layui-btn" lay-submit lay-filter="formDemo" id="userInfoSubmit">提交</button>
+				    </div>
+				  </div>
+			</form>
+	<script src="../../../plugins/layui/layui.all.js"></script>	
+	<script src="../../../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+	</script>
+	</body>
+</html>

@@ -1,83 +1,77 @@
 {
   "code": 0,
   "msg": "",
-  "count": 21,
-   "data":[
+  "count": 10,
+    "data":[
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":110,
+            "name":"小学教学目录（苏教版）",
+            "schoolType":1,
+            "schoolTypeName":"小学",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":114,
+            "name":"小学实验目录（川省厅版）",
+            "schoolType":1,
+            "schoolTypeName":"小学",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":117,
+            "name":"高中实验目录",
+            "schoolType":3,
+            "schoolTypeName":"高中",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":118,
+            "name":"初中实验目录",
+            "schoolType":2,
+            "schoolTypeName":"初中",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":130,
+            "name":"小学教学实验室目录(科教版) - jolin",
+            "schoolType":1,
+            "schoolTypeName":"小学",
+            "version":"苏教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":131,
+            "name":"初中教学实验室目录-jolin",
+            "schoolType":2,
+            "schoolTypeName":"初中",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":132,
+            "name":"高中教学实验目录-jolin",
+            "schoolType":3,
+            "schoolTypeName":"高中",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":137,
+            "name":"初中教学实验室目录",
+            "schoolType":2,
+            "schoolTypeName":"初中",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":140,
+            "name":"完全中学教学实验目录",
+            "schoolType":57,
+            "schoolTypeName":"完全中学",
+            "version":"人教版"
         },
         {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
-        },
-        {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
-        },
-        {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
-        },
-        {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
-        },
-        {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
-        },
-        {
-            "listName":"小学教学实验室目录(科教版) ",
-            "public":"苏教版",
-            "rightSchoolType":"小学"
+            "id":141,
+            "name":"九年一贯制教学实验目录（苏教版）",
+            "schoolType":56,
+            "schoolTypeName":"九年一贯制",
+            "version":"苏教版"
         }
-        
     ]
 }

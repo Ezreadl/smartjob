@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频回看</title>
+		<link rel="stylesheet" type="text/css" href="../../../plugins/layui/css/layui.css"/>
+		<link rel="stylesheet" href="../../../css/pageCss/seeVideo.css"> 
+	</head>
+
+<body>
+
+		<div class="bigdiv">
+			<div class="content">
+			<form class="layui-form" action="" id="seeVideoAlert">
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">学校</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="school" id="school" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			   <div class="layui-form-item">
+			    <label class="layui-form-label">开课时间</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="lessonTime" id="lessonTime" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">班级</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="className" id="className" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">开课教师</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="teacherName" id="teacherName" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">科目</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="course" id="course" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			   <div class="layui-form-item">
+			    <label class="layui-form-label">实验室</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="organ" id="organ" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">开设组数</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="lessonGroup" id="lessonGroup" required  lay-verify="required" autocomplete="off" class="layui-input layui-disabled" disabled>
+			    </div>
+			  </div>
+			   <div class="layui-form-item layui-form-text">
+				    <label class="layui-form-label">实验内容</label>
+				    <div class="layui-input-block">
+				      <textarea name="lessonInfo" id="lessonInfo" class="layui-textarea layui-disabled" disabled></textarea>
+				    </div>
+				  </div>	
+						<div class="layui-form-item layui-form-text">
+								<label class="layui-form-label">实验器材</label>
+								<div class="layui-input-block">
+									<textarea name="instrument" id="instrument" class="layui-textarea layui-disabled" disabled></textarea>
+								</div>
+						</div>		
+			      
+			</form>
+			</div>
+			<div class="content">
+					<div class="contentDes">
+					<div class="describ">
+						<p>是否符合使用要求</p>
+						<div id="require"></div>
+						<p>巡查评价</p>
+						<div id="apptComt"></div>
+				</div>
+				</div>
+				<div style="float: left;width: 50%;height: 250px;">
+							<center><P>
+							<OBJECT
+									id="SNMSCloudOcx"
+									classid="clsid:DEEE91FD-B7EE-451A-BF54-F7A289BC422D"
+									align=right
+									hspace=0
+									vspace=0
+									width=100%
+									height=250
+							>
+							</OBJECT>
+				</div>
+			
+				<div class="layui-carousel" id="test10">
+					  <div carousel-item="" style="width: 100%;height: 100%" id="carouselImg">
+					     <!--<div><img src="http://125.68.187.248:10080/alarmpicture/17369.jpg"></div>
+							 <div><img src="http://125.68.187.248:10080/alarmpicture/17368.jpg"></div>
+							 <div><img src="http://125.68.187.248:10080/alarmpicture/17367.jpg"></div>
+							 <div><img src="http://125.68.187.248:10080/alarmpicture/17366.jpg"></div>
+							 <div><img src="http://125.68.187.248:10080/alarmpicture/17365.jpg"></div> -->
+
+					  </div>
+				</div>
+						<!--<div/>
+						当前使用摄像头ID-1：<INPUT size="100" type="text" name="txtVideoChid"  id="ChannelID" value="8a92c87d4d2daeb8014d31a194f001d3" />
+						<div/>
+						<div/>
+						当前使用摄像头ID-2：<INPUT size="100"type="text" name="txtVideoChid2"  id="ChannelID2" value="8a92c86e5afde49a015afdf0030a0068"/>
+						<div/>
+
+						<INPUT type="button" name="btnStartVideo" value="开启预览画面" onclick="StartVideo()" />
+						<INPUT type="button" name="btnStartPlayback" value="开启历史画面" onclick="StartPlayback()" />
+						<INPUT type="button" name="btnStopVideo" value="关闭画面" onclick="StopVideo()" />
+						<INPUT type="button" name="btnGetSource" value="获取资源数据" onclick="GetSourceInfo()" />
+						<INPUT type="button" name="btnGetAlarmType" value="获取报警类型" onclick="GetAlarmTypes()" />
+						<INPUT type="button" name="btnGetAlarmInfo" value="获取报警数据" onclick="GetAlarmInfos()" />
+
+						<INPUT type="button" name="btnStartTalkBack" value="开启对讲" onclick="StartTalkBack()" />
+						<INPUT type="button" name="btnStopTalkBack" value="开启广播" onclick="StartBroadCast()" />
+						<INPUT type="button" name="btnStopTalkBack" value="关闭对讲或广播" onclick="StopTalk()" />
+						<INPUT type="button" name="btnGetVersion" value="获取版本号" onclick="GetVersion()" />
+
+						<H2> 输出结果 </H2><p>
+						<textarea id="result_textareas" rows="10" cols="120" style="width: 100%;height: 90%">
+						结果输出
+						</textarea>-->
+			</div>
+		</div>		
+		<script src="../../../plugins/layui/layui.all.js"></script>
+		<script src="../../../js/jquery.min.js"></script>	
+	<script src="../../../js/pageJs/CSSP_Interface.js"></script>
+		<script type="text/javascript">
+			function getCurChannelID()
+	{
+		return getEle('ChannelID').value;
+	}
+	
+	function getCurChannelID2()
+	{
+		return getEle('ChannelID2').value;
+	}
+	
+	function showResult(msg)
+	{
+		getEle('result_textareas').innerHTML =msg;
+	}
+	function getEle(id)
+	{
+		return document.getElementById(id);
+	}
+	window.onload = function()
+	{
+		CreateInstance();
+		//SnCloud_SetPath('C:\\Picture','C:\\Reocrd');
+	}
+	
+	window.onbeforeunload = function() 
+	{   
+		//SnCloud_DestroyInstance();
+		//alert('开始销毁');
+	}
+	
+	var DbsIP = '125.68.187.248';
+	var DbsPort = 10080;
+	var PlatformUserName = 'snadmin';
+	var PlatfromUserPwd = '123456';
+	var ChannelID="";
+	//控件函数
+	function CreateInstance()
+	{
+		SnCloud_CreateInstance();
+	}
+	function DestroyInstance()
+	{
+		SnCloud_DestroyInstance();
+	}
+	function GetSourceInfo()
+	{
+//		alert(123);
+		var SourceInfo;
+		SourceInfo = SnCloud_GetSourceInfo(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,'5');
+//		alert(SourceInfo);
+		showResult(SourceInfo);
+	}
+	function StartVideo()
+	{
+		SnCloud_StartVideo(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,ChannelID,1);
+		// alert(DbsIP);
+	}
+	function StartPlayback()
+	{
+		SnCloud_StartPlayback(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,
+			getCurChannelID(), '2016-12-29 00:00:00', '2016-12-29 23:59:59');
+	}
+	function StopVideo()
+	{
+		SnCloud_StopVideo();
+	}
+	
+	function GetAlarmTypes()
+	{
+		var SourceInfo;
+		SourceInfo = SnCloud_GetAlarmTypes(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd);
+		showResult(SourceInfo);
+	}
+	function GetAlarmInfos()
+	{
+		var SourceInfo;
+		var AlarmTypeId=-1;
+		var DevName='';
+		var AlarmPosi='';
+		var AlarmTiemB='2016-12-29 00:00:00';
+		var AlarmTimeE='2017-12-29 00:00:00';
+		var StartLine=0;
+		var LineCnt=100;
+		SourceInfo = SnCloud_GetAlarmInfos(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,
+			AlarmTypeId, DevName, AlarmPosi, AlarmTiemB, AlarmTimeE, 
+			StartLine, LineCnt);
+		showResult(SourceInfo);
+	}
+	
+	function StartTalkBack()
+	{
+		SnCloud_StartTalk(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,getCurChannelID(), 1);
+	}
+	
+	function StartBroadCast()
+	{
+		SnCloud_StartTalk(DbsIP,DbsPort,PlatformUserName,PlatfromUserPwd,getCurChannelID() + ',' + getCurChannelID2(), 1);
+	}
+	
+	function StopTalk()
+	{
+		SnCloud_StopTalk();
+	}
+	function GetVersion()
+	{
+		var ret;
+		ret = SnCloud_GetVersion();
+		showResult(ret);
+	}
+		</script>
+
+	</body>
+</html>

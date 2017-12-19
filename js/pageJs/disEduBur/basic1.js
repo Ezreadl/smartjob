@@ -2,17 +2,16 @@ $(function(){
 	var option1 = {
 	  elem: '#sInfo' 
 	  ,even: true
-	  ,limits: [20,30,50]
+	  ,limits: [20]
   	  ,limit: 20 //默认采用20
 	  ,height:"full-150" //容器高度
-	  ,url:'../../datas/schoolInfo.json'
+	  ,url:path_way.schoolInfo
 	  ,page:true
 	  ,cols: [[
-	  			{field:'schoolName',sort: true, fixed: true,title:'学校名称'},
+	  			{field:'organName',sort: true, fixed: true,title:'学校名称'},
 	  			{field:'course',title:'课表',templet:'#course',event:'seeCourse'},
-	  			{field:'schoolType', sort: true,title:'学校类型'},
-	  			{field:'place',title:'学校地址'},
-	  			{field:'isShow', title:'点位操作权限',templet:'#auth'},
+	  			{field:'organType', sort: true,title:'学校类型'},
+	  			{field:'locationUrl', title:'点位操作权限',templet:'#auth'},
 	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
 	  ]]//设置表头  
 	};
@@ -34,7 +33,7 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
     if(layEvent === 'courseCharts'){
       		parent.layer.open({
       			type: 2,
-	    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
+	    		title: ["课表","font-size:16px"], //不显示标题栏   title : false/标题
 		      	area: ['1000px','500px'],
 		      	shade: 0.8,
 		      	anim:2,
@@ -43,14 +42,16 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 		     	id: 'courseCharts', //设定一个id，防止重复弹出
 		      	resize: false,
 		     	moveType: 1, //拖拽模式，0或者1
-		     	content:'./alertInfo/courseCharts.html'
+		     	content:'./alertInfo/disEduBur/courseCharts.html'
       		})
-    }
-    if(layEvent === 'edit'){
+    }else if(layEvent === 'edit'){
+    	var organName = obj.data.organName;
+    	var organType = obj.data.organType;
+    	
       		parent.layer.open({
       			type: 2,
 	    		title: ["修改信息","font-size:16px"], //不显示标题栏   title : false/标题
-		      	area: ['500px','360px'],
+		      	area: ['400px','300px'],
 		      	shade: 0.8,
 		      	anim:2,
 		      	skin: 'layui-layer-lan',
@@ -58,8 +59,33 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 		     	id: 'edit', //设定一个id，防止重复弹出
 		      	resize: false,
 		     	moveType: 1, //拖拽模式，0或者1
-		     	content:'./alertInfo/nCreate.html'
-      		})
+		     	content:'./alertInfo/disEduBur/nCreate.html',
+		     	success:function(layero,index){
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     		iframeWin.$("#organName").attr("value",organName);
+		     		
+					iframeWin.$("#laySubmit").click(function(){
+						if(iframeWin.$("#organName").val()==""){
+							
+						}else if(iframeWin.$("#organType").val()==""){
+							
+						}else{
+							$.ajax({
+							type:"get",
+							url:path_way.schoolInfo2,
+							dataType:"json",
+							data:iframeWin.$("#nCreate").serialize(),
+							success:function(data){															
+								table.reload("sInfo",{});								
+								parent.layer.closeAll('iframe');								
+							}
+						});
+						}									
+						
+					})	
+		     	}
+      		});
+      		    		
     }
     
 
@@ -70,7 +96,7 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
     	parent.layer.open({
     		type: 2,
     		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','360px'],
+	      	area: ['400px','300px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
@@ -78,7 +104,30 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 	     	id: 'nBuild', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
+	     	content:'./alertInfo/disEduBur/nCreate.html',
+	     	success:function(layero,index){
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     	
+					iframeWin.$("#laySubmit").click(function(){
+						if(iframeWin.$("#organName").val()==""){
+							
+						}else if(iframeWin.$("#organType").val()==""){
+							
+						}else{
+							$.ajax({
+							type:"get",
+							url:path_way.schoolInfo3,
+							dataType:"json",
+							data:iframeWin.$("#nCreate").serialize(),
+							success:function(data){															
+								table.reload("sInfo",{});								
+								parent.layer.closeAll('iframe');								
+							}
+						});
+						}									
+						
+					})	
+		     	}
 	     	
     	})
     	

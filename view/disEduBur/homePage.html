@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+	<style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #f8f8f8;
+        }
+        .content{
+            width: 30%;
+            height: 300px;
+            margin:10px 5px;
+            float: left;
+            border: 1px solid #dddddd;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color:#ffffff;
+            box-shadow: 3px 3px 0px #eeeeee;
+            border-radius: 8px;
+        }
+        .contentTitle{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            color: #336699;
+            /*font-weight: bold;*/
+            font-size: 17px;
+        }
+        .contentCharts{
+            width: 100%;
+            height: 190px;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            border-bottom: 2px solid #336699
+        }
+        .describ{
+            width: 100%;
+            height: 60px;
+        }
+        .describ p{
+            font-size: 14px;
+            line-height: 30px;
+            width: 44%;
+            float: left;
+            padding-left: 10px;
+            display: inline-block;
+        }
+        p{
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="content" style="margin-left: 30px">
+        <div class="contentTitle">
+            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+            实验室当前使用情况
+        </div>
+        <div class="contentCharts" >
+              <div id="charts1" style="height:210px;width: 100%;"></div>
+        </div>
+        <div class="describ">
+            <p>实验室总数：<span style="color: red;font-weight: bold">248</span></p>
+            <p>当前使用数：<span style="color: #4488bb;font-weight: bold">168</span>&nbsp;&nbsp;</p>
+            <p>监控设备故障：<span style="color: red;font-weight: bold">4</span></p>
+   
+        </div>
+    </div>
+
+    <div class="content" style="margin-left: 15px">
+        <div class="contentTitle">
+            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+            课时完成情况
+        </div>
+        <div class="contentCharts" style="padding-top: 15px;border: none">
+            <p>课时总数：<span style="color:#4488bb;font-weight: bold">368</span></p>
+            <p>必修课时总数：<span style="color:#4488bb;font-weight: bold">268</span></p>
+            <p>演示课时总数：<span style="color: #4488bb;font-weight: bold">100</span></p>
+            <p>已完成必修课时</p>
+              <div class="layui-progress layui-progress-big" lay-showpercent="true" style="width: 100%;margin-top: 10px;">
+                <div class="layui-progress-bar layui-bg-blue"  lay-percent="30%"></div>
+            </div>
+            <p>已完成演示课时</p>
+              <div class="layui-progress layui-progress-big" lay-showpercent="true" style="width: 100%;margin-top: 10px;">
+                <div class="layui-progress-bar layui-bg-red" lay-percent="50%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" style="margin-left: 15px">
+        <div class="contentTitle">
+            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+            实验室预约占比
+        </div>
+        <div class="contentCharts" style="height: 270px;border: none;">
+              <div id="charts2" style="height:270px;width: 100%"></div>
+        </div>       
+    </div>
+
+     <div class="content" style="margin-left: 30px">
+        <div class="contentTitle">
+            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+            用户使用排行
+        </div>
+        <div class="contentCharts" style="border: none">
+              <p><span style="color: #4488bb;font-weight: bold;font-size: 18px">No1</span></p>
+        </div>
+       
+    </div>
+
+     <div class="content" style="margin-left: 15px">
+        <div class="contentTitle">
+            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+           最新预约用户
+        </div>
+        <div class="contentCharts" >
+              <div id="charts1" style="height:210px;width: 100%"></div>
+        </div>
+       
+    </div>
+	
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
+    <script src="../../js/pageJs/homePage.js"></script>
+ 	<script src="../../plugins/echarts-all.js"></script>
+</body>
+
+</html>

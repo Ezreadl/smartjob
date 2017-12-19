@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>课表</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <script src="../../plugins/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            /*border: 1px solid red;*/
+        }
+
+        @media only screen and (max-width:720px) {
+            body {
+                font-size: 50%;
+            }
+        }
+
+        body {
+            padding: 20px 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .dataNumber {
+            width: 85%;
+            height: 100%;
+            float: left;
+            padding: 0px 20px 0px 0px;
+            box-sizing: border-box;
+        }
+        .returnWatch:hover {
+            color: red;
+        }
+
+        .global_module {
+            float: left;
+            width: 15%;
+            /*height: 400px;*/
+            box-sizing: border-box;
+            /*padding-left: 10px;*/
+        }
+
+        .tooltip {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            color: #4169E1;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        #title {
+            background-color: #4169E1;
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            color: white;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            box-sizing: border-box;
+            border-radius: 7px 7px 0px 0px;
+            border-bottom: 1px solid lightgray;
+            /*position: absolute;*/
+        }
+
+        .scrollNews {
+            width: 100%;
+            height: 440px;
+            overflow: hidden;
+            background: #FFFFFF;
+            border: 1px solid #ddd;            
+        }
+
+        .scrollNews ul li {
+            height: 40px;
+            color: gray;
+            font-size: 12px;
+            line-height: 35px;
+            box-sizing: border-box;
+        }
+
+        #foot {
+            width: 100%;
+            height: 10px;
+            background-color: lightgray;
+        }
+        .layui-table-view .layui-table td, .layui-table-view .layui-table th{
+            height: 51px !important;
+            padding: 0px 0px !important;
+        }
+        .layui-table-cell{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 0px 10px;
+            line-height: 51px;
+        }
+        .scrollStyle{
+            background-color:#71b7e6;
+            font-weight:bold;
+            color: #ffffff;
+        }       
+        .returnWatch {        
+            background-color: #009688;       
+        }
+        .aStyle{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        .noClass{
+            background-color: #ccccff;
+        }
+        .missClass{
+            background-color: #ff0033;
+        }
+        .manyClass{
+            background-color: #ffcc99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="number1 dataNumber">
+        <table class="layui-table" id="courseCharts" lay-size="lg" lay-filter="demo">
+
+        </table>
+    </div>
+
+    <div class="global_module news">
+        <h3 id="title"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe609;</i>学校</h3>
+        <div class="scrollNews">
+            <ul>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>城西附小</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>分水中学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>凤舞中学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>一立中学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>扬子小学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>春风化雨小学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>泸州一中</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>泸州四中</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>马家坪小学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>静文中学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>孔子小学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>泸州十二中</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>烈面中学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>育才小学</a></li>
+                <li><a href="#" class="tooltip"><i class="layui-icon" style="font-weight: 20px;margin: 5px;">&#xe623;</i>WRS小学</a></li>
+            </ul>
+
+        </div>
+        <div id="foot"></div>
+    </div>
+
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../path.js"></script>
+    <script src="../../js/pageJs/disEduBur/courseCharts.js"></script>
+    <script type="text/html" id="labContent1">
+        {{# if(Array.isArray(d.week1)== true){ }}
+            <a href="#" class="manyClass aStyle" lay-event="manyClass"><span>多个实验室</span></a> 
+        {{# }else if(d.week1.split(",")[0] == "1"){}}
+            <a href="#" class="returnWatch aStyle" lay-event="returnWatch"><span>回看详情</span></a>          
+        {{# }else if(d.week1.split(",")[0] == "2"){}}
+            <a href="#" class="missClass aStyle" lay-event="missClass"><span>缺课</span></a>         
+        {{# }else if(d.week1.split(",")[0] == "3"){}}
+            <a href="#" class="noClass aStyle" lay-event="noClass"><span>已调课</span></a>  
+        {{# } }}
+    </script>
+    <script type="text/html" id="labContent2">
+        {{# if(Array.isArray(d.week2)== true){ }}
+            <a href="#" class="manyClass aStyle" lay-event="manyClass"><span>多个实验室</span></a> 
+        {{# }else if(d.week2.split(",")[0] == "1"){}}
+            <a href="#" class="returnWatch aStyle" lay-event="returnWatch"><span>回看详情</span></a>          
+        {{# }else if(d.week2.split(",")[0] == "2"){}}
+            <a href="#" class="missClass aStyle" lay-event="missClass"><span>缺课</span></a>         
+        {{# }else if(d.week2.split(",")[0] == "3"){}}
+            <a href="#" class="noClass aStyle" lay-event="noClass"><span>已调课</span></a>  
+        {{# } }}
+    </script>
+    <script type="text/html" id="labContent3">
+        {{# if(Array.isArray(d.week3)== true){ }}
+            <a href="#" class="manyClass aStyle" lay-event="manyClass"><span>多个实验室</span></a> 
+        {{# }else if(d.week3.split(",")[0] == "1"){}}
+            <a href="#" class="returnWatch aStyle" lay-event="returnWatch"><span>回看详情</span></a>          
+        {{# }else if(d.week3.split(",")[0] == "2"){}}
+            <a href="#" class="missClass aStyle" lay-event="missClass"><span>缺课</span></a>         
+        {{# }else if(d.week3.split(",")[0] == "3"){}}
+            <a href="#" class="noClass aStyle" lay-event="noClass"><span>已调课</span></a>  
+        {{# } }}
+    </script>
+    <script type="text/html" id="labContent4">
+        {{# if(Array.isArray(d.week4)== true){ }}
+            <a href="#" class="manyClass aStyle" lay-event="manyClass"><span>多个实验室</span></a> 
+        {{# }else if(d.week4.split(",")[0] == "1"){}}
+            <a href="#" class="returnWatch aStyle" lay-event="returnWatch"><span>回看详情</span></a>          
+        {{# }else if(d.week4.split(",")[0] == "2"){}}
+            <a href="#" class="missClass aStyle" lay-event="missClass"><span>缺课</span></a>         
+        {{# }else if(d.week4.split(",")[0] == "3"){}}
+            <a href="#" class="noClass aStyle" lay-event="noClass"><span>已调课</span></a>  
+        {{# } }}
+    </script>
+    <script type="text/html" id="labContent5">
+        {{# if(Array.isArray(d.week5)== true){ }}
+            
+            <a href="#" class="manyClass aStyle" lay-event="manyClass"><span>多个实验室</span></a> 
+        {{# }else if(d.week5.split(",")[0] == "1"){}}
+            <a href="#" class="returnWatch aStyle" lay-event="returnWatch"><span>回看详情</span></a>          
+        {{# }else if(d.week5.split(",")[0] == "2"){}}
+            <a href="#" class="missClass aStyle" lay-event="missClass"><span>缺课</span></a>         
+        {{# }else if(d.week5.split(",")[0] == "3"){}}
+            <a href="#" class="noClass aStyle" lay-event="noClass"><span>已调课</span></a>  
+        {{# } }}
+    </script>
+    
+</body>
+
+</html>

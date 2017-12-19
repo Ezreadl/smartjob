@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>课表</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>-->
+	<!--<link href="../../css/pageCss/import_basic.css" rel="stylesheet" type="text/css" />-->
+	<link rel="stylesheet" type="text/css" href="../../css/pageCss/fullcalendar.css">	
+    <script src="../../plugins/jquery.min.js"></script>		
+	<script src='../../js/pageJs/jquery-ui-1.10.2.custom.min.js'></script>
+	<script src='../../js/pageJs/fullcalendar.min.js'></script>
+	<style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            /*border: 1px solid red;*/
+        }
+        @media only screen and (max-width:720px){
+		    body{
+		    	font-size:50%;
+		    }
+		}
+        body{
+        	padding: 20px 20px;
+        	box-sizing: border-box;
+			position: relative;
+        }
+        .contentBox{
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            border: 1px solid #eee;
+            /*border-radius: 20px;*/
+        }
+		  th{
+            font-weight: normal !important;
+            line-height: 50px;
+        }
+		.fc-header-title h2{
+			font-size: 18px;
+		}
+    </style>
+</head>
+<body>
+		<div class="search" style="height: 30px;position:absolute;">
+		<form class="layui-form" action="" style="height: 100%">
+				 <div class="layui-form-item">
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="" lay-search="" id="selectSchool">
+			          <option value="">学校名称</option>
+			          <!--<option value="1">城西附小</option>
+			          <option value="2">分水中学</option> -->
+			        </select>
+			      </div>
+				  <div class="layui-input-inline" style="width:5%;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+
+			</div>
+			
+		</form>
+	</div>
+
+	<div class="page_content"> 
+			<div class="calendar_win">
+				<div id='calendar'></div>
+			</div>
+		</div>
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../path.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				 var date = new Date();
+				 var d = date.getDate();
+				 var m = date.getMonth();
+				 var y = date.getFullYear();
+
+				$('#calendar').fullCalendar({
+					header: {
+						right: 'prev,next today',
+						center: 'title',
+						left: ''
+					},
+					defaultView:'agendaWeek', //默认周视图
+					firstDay: 1,
+					editable: true,
+					timeFormat: 'H:mm',
+					axisFormat: '第H节', //左侧时间格式
+					weekends:false,  //是否显示周末
+					// crew_classTime_Arr:crew_classTime_Arr,
+					// slotLabelInterval:'00:20:00',//左侧标注时间间隔
+
+			events: [
+                {
+                    id:'test1',
+                    //resourceId: 'b',
+                    title: '<p class="fc-schedule-td-p">运行规范-乘务员工作指导和要求(1/4)</p>' +
+                    '<p class="fc-schedule-td-p">R:培训楼311化妆室</p>',
+                    start: '2017-12-12 10:00',
+                    end: '2017-12-12 11:00',
+                    color: '#efffe3',
+                    textColor:'blue'
+                }
+                //颜色背景设置
+//                        {
+//                            id: 'availableForMeeting',
+//                            start: '2016-08-02 08:00',
+//                            end: '2016-08-02 08:45',
+//                            rendering: 'background'
+//                        }
+
+            		]
+								
+				})
+//				$(".fc-event").addClass("themeBgColor");
+//				var themeBgColor= $(".fc-event").css("backgroundColor");
+//				$(".fc-event").css({"backgroundColor":themeBgColor,"borderColor":themeBgColor});
+//				$(".fc-event").css({"backgroundColor":"red","borderColor":"red"});
+			});
+		</script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../plugins/layui/css/layui.css" media="all">
+		<style type="text/css">
+			.layui-btn{
+				font-size: 16px !important;
+				padding: 0px 12px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="layui-form" id="orderInfoAlert" style="margin: 30px 40px 0px 0px;">
+				<div class="layui-form-item">
+				    <label class="layui-form-label">教师</label>
+				    <div class="layui-input-block" >
+			      		<input type="text" name="teacherName" id="teacherName" required  lay-verify="required"  autocomplete="off" class="layui-input layui-disabled" disabled>				   
+				  </div>
+				</div>	
+					<div class="layui-form-item">
+			    	<label class="layui-form-label">学科</label>
+			    		<div class="layui-input-block">
+							<select name="termName" lay-verify="required" id="termName">
+					        	  <option value="">请选择学科</option>
+						          <option value="1">物理</option>
+						          <option value="2">化学</option> 
+				      		</select>
+			    		</div>
+			  		</div>
+
+			  	<div class="layui-form-item">
+				    <label class="layui-form-label">实验班级</label>
+				    <div class="layui-input-block" >
+				  		<select name="termName" lay-verify="required" id="termName">
+					        	  <option value="">请选择班级</option>
+						          <option value="1">九年级一班</option>
+						          <option value="2">八年级二班</option> 
+				      		</select>
+				    </div>
+				</div>				
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">实验类型</label>
+			    		<div class="layui-input-block">
+			    			<select name="termName" lay-verify="required" id="termName">
+					        	  <option value="">请选择实验类型</option>
+						          <option value="1">分组</option>
+						          <option value="2">演示</option> 
+				      	</select>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">实验名称</label>
+			    		<div class="layui-input-block">
+			    			<select name="termName" lay-verify="required" id="termName">
+					        	  <option value="">请选择实验</option>
+						          <option value="1">提取粗盐中的精盐</option>
+						          <option value="2">研究空气的主要成分</option> 
+				      	</select>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="layui-form-item">
+				    <label class="layui-form-label">开设组数</label>
+				    <div class="layui-input-block" >
+			      		<input type="text" name="labType" id="labType" required  lay-verify="required"  autocomplete="off" class="layui-input">				   
+				  </div>
+				</div>	
+				
+				<div class="layui-form-item">
+			      <label class="layui-form-label">预作时间</label>
+			      <div class="layui-input-inline">
+			        <input type="text" class="layui-input" id="test5" placeholder="yyyy-MM-dd HH:mm:ss">
+			      </div>
+			    </div>
+				
+				 <div class="layui-form-item layui-form-text">
+				    <label class="layui-form-label">实验器材</label>
+				    <div class="layui-input-block">
+				      <textarea placeholder="请输入所需的实验器材" class="layui-textarea"></textarea>
+				    </div>
+				  </div>
+			  	
+			  	<div class="layui-form-item">
+						<div class="layui-inline">
+							<label class="layui-form-label">是否为调课</label>
+							<div class="layui-input-block">
+								<input type="radio" name="yes" value="是" title="是" >
+								<input type="radio" name="yes" value="否" title="否" checked="">
+							</div>
+							</div>
+
+								<div class="layui-inline">
+				    <div class="layui-input-block">
+				      <button class="layui-btn" lay-submit lay-filter="formDemo" id="labInfoSubmit">提交</button>
+				    </div>
+								</div>
+				  </div>
+			</form>
+		
+	<script src="../../../plugins/layui/layui.all.js"></script>	
+	<script src="../../../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		layui.use('laydate',function(){
+			var laydate = layui.laydate;
+			
+			 laydate.render({
+			    elem: '#test5'
+			    ,type: 'datetime'
+			  });
+		})
+	</script>
+	</body>
+</html>

@@ -35,7 +35,7 @@
 
 			    <div class="layui-input-inline">
 			      <div class="layui-input-block" style="margin-left:10px !important;">
-			        <input type="text" name="date" id="date1" autocomplete="off" class="layui-input" placeholder="2017-11-20">
+			        <input type="text" name="date" id="date1" autocomplete="off" class="layui-input" placeholder="请选择审批时间">
 			      </div>
 			    </div>
 			  	
@@ -72,12 +72,13 @@
 
     <script src="../../plugins/layui/layui.all.js"></script>
     <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
     <script src="../../js/pageJs/schoolAdmin/schoolCheck.js"></script>
-    <script type="text/javascript" id="checkState">
+    <script type="text/html" id="checkState">
     	 {{#  if(d.checkState==1){ }}
 		  		<span>已审批</span>
 		  {{#  }else{}}
-		  		<a href="javascript:;" lay-event="checkState" style="color: red;font-weight: bold;text-decoration: underline;">【审批】</a>
+		  		<a href="javascript:;" lay-event="checkState" style="color: red;font-weight: bold;">【审批】</a>
 		  {{# } }}
     </script>
 </body>

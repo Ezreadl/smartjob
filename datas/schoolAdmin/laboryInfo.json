@@ -1,0 +1,37 @@
+{
+    "code": 0,
+	"msg": "",
+	"count": 21,
+    "data":[
+        {
+            "currentSchoolType":"小学",
+            "labAddress":"物理",
+            "labDevId":121,
+            "labDevName":"大林小学-物理实验室",
+            "labId":239,
+            "labName":"物理实验室（通用）",
+            "labType":"通用实验室",
+            "labTypeValue":"COMMON_LAB"
+        },
+        {
+            "currentSchoolType":"初中",
+            "labAddress":"化学",
+            "labDevId":140,
+            "labDevName":"大林小学-化学实验室",
+            "labId":240,
+            "labName":"化学实验室",
+            "labType":"化学实验室",
+            "labTypeValue":"CHEMISTRY"
+        },
+        {
+            "currentSchoolType":"高中",
+            "labAddress":"微机室",
+            "labDevId":157,
+            "labDevName":"大林小学-微机室",
+            "labId":241,
+            "labName":"微机室",
+            "labType":"微机室",
+            "labTypeValue":"COMPUTER_ROOM"
+        }
+    ]
+}

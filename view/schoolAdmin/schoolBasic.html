@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>基础信息管理</title>
+    <title>用户信息管理</title>
     <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pageCss/zzsc.css"/>-->
 	<style type="text/css">
 		body,html{
 			overflow-y: hidden;
@@ -15,20 +16,285 @@
 </head>
 <body>
 
+	<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+	  <ul class="layui-tab-title">
+	    <li class="layui-this" lay-id="num1">教学目录浏览</li>
+	    <li lay-id="num2">任课信息管理</li>
+	    <li lay-id="num3">实验室信息</li>
+	    <li lay-id="num4">用户信息管理</li>
+	  </ul>
 
+<div class="layui-tab-content">
+	  	
+	<!--教学目录浏览-->
+<div class="layui-tab-item layui-show">
+	  			
+	<div class="tableHeader">
+		<div class="searchForm" style="width: 100%;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">				 	
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">学期</option>
+			          <option value="1">2017-2018上学期</option>
+			          <option value="2">2017-2018下学期</option> 
+			        </select>
+			      </div>
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">年级</option>
+			          <option value="1">一年级</option>
+			          <option value="2">二年级</option> 
+			        </select>
+			      </div>
+			      
+			      <div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">学科</option>
+			          <option value="1">物理</option>
+			          <option value="2">化学</option> 
+			        </select>
+			      </div>
+				  	
+				  	<div class="layui-input-inline" style="width:250px;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions">			
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>
+			<button class="newCreate" id="upload">
+				<i class="fa fa-upload"></i>
+				<span>导入</span>
+			</button>
+		</div>
+	</div>	
+	<table class="layui-table" id="teachListBrowse"  lay-filter="demo"></table>
+</div>
+
+	<!--任课信息管理-->
+	    <div class="layui-tab-item">
+	    	<div class="tableHeader">
+		<div class="searchForm" style="width: 100%;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">				 	
+
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">年级</option>
+			          <option value="1">一年级</option>
+			          <option value="2">二年级</option> 
+			        </select>
+			      </div>
+			      				  	
+				  	<div class="layui-input-inline" style="width:250px;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions">			
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>
+			<button class="newCreate" id="upload">
+				<i class="fa fa-upload"></i>
+				<span>导入</span>
+			</button>
+			<button class="newCreate" id="addCourse" data-method="notice">
+				<i class="fa fa-plus"></i>
+				<span>添加</span>
+			</button>		
+		</div>
+	</div>	
+	<table class="layui-table" id="courseInfo"  lay-filter="demo"></table>
+	    	
+</div>
+	    
+	    
+	<!--实验室信息-->
+	    <div class="layui-tab-item">
+	    	<div class="tableHeader">
+		<div class="searchForm" style="width: 100%;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">				 	
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">实验室类型</option>
+			          <option value="1">物理</option>
+			          <option value="2">化学</option> 
+			        </select>
+			      </div>
+				 	
+				  	<div class="layui-input-inline" style="width:250px;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>
+		
+	</div>	
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions">			
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>
+			<button class="newCreate" id="upload">
+				<i class="fa fa-upload"></i>
+				<span>导入</span>
+			</button>
+			<button class="newCreate" id="addLab" data-method="notice">
+				<i class="fa fa-plus"></i>
+				<span>添加</span>
+			</button>		
+		</div>
+	</div>	
+	<table class="layui-table" id="laboryInfoList"  lay-filter="demo"></table>
+	    </div>
+	    
+	    
+	<!--用户信息管理-->
+<div class="layui-tab-item">
+	    		
+	<div class="tableHeader">
+		
+		<div class="searchForm" style="width: 100% !important;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">
+				 	
+			      <div class="layui-input-inline">
+			        <select name="modules" lay-verify="" lay-search="">
+			          <option value="">职位</option>
+			          <option value="3">实验员</option>
+			          <option value="4">实验巡查员</option> 
+			          <option value="5">教师</option>
+			        </select>
+			      </div>
+				  	
+				  	<div class="layui-input-inline" style="width:5%;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>
+	</div>
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		<div class="tableOptions">			
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>
+			<button class="newCreate" id="upload">
+				<i class="fa fa-upload"></i>
+				<span>导入</span>
+			</button>
+			<button class="newCreate" id="userAdd" data-method="notice">
+				<i class="fa fa-plus"></i>
+				<span>添加</span>
+			</button>		
+		</div>
+	</div>
+		
+	</div>
+		<table id="userInfo" lay-filter="demo"></table>
+		
+	    </div>	  	
+  </div>
+</div>   
  
+
 <script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-mini" lay-event="edit" title="详细" style="background-color: #ffffff !important;">
+  	<i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe62d;</i> 
+  </a>
+</script>
+<script type="text/html" id="optionDemo">
   <a class="layui-btn layui-btn-mini" lay-event="edit" title="编辑" style="background-color: #f8f8f8;color: #0099cc;">编辑</a>
   <a class="layui-btn layui-btn-mini" lay-event="detail" style="background-color: #f8f8f8;color: #0099cc;font-weight: bold;">|</a>
   <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del" title="删除" style="background-color: #f8f8f8;color: orangered;">删除</a>
 </script>
 
+
     <script src="../../plugins/layui/layui.all.js"></script>
     <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
     <script src="../../js/pageJs/schoolAdmin/basicInfo.js"></script>  
-    <script type="text/javascript">
-
-    </script>
+ 	 <script type="text/html" id="demonstration">
+		  {{#  if(d.demonstration=="NEED"){ }}
+		  		<span><i class="layui-icon" style="font-size: 18px; color: #336699;">&#xe618;</i></span>
+		  {{#  } else { }}
+		   		<span></span>
+		  {{#  } }}
+	</script>
+	
+	 <script type="text/html" id="inClass">
+		  {{#  if(d.inClass=="IN_CLASS"){ }}
+		  		<span><i class="layui-icon" style="font-size: 18px; color: #336699;">&#xe658;</i></span>
+		  {{#  } else { }}
+		   		<span></span>
+		  {{#  } }}
+	</script>
+	
+	 <script type="text/html" id="outClass">
+		  {{#  if(d.outClass=="IN_CLASS"){ }}
+		  		<span></span>
+		  {{#  } else { }}
+		   		<span><i class="layui-icon" style="font-size: 18px; color: #336699;">&#xe658;</i></span>
+		  {{#  } }}
+	</script>
+	<script type="text/html" id="starCourse">
+		  {{#  if(d.starCourse="STAR_COURSE"){ }}
+		  		<span><i class="layui-icon" style="font-size: 18px; color: #336699;">&#xe658;</i></span>
+		  {{#  } else { }}
+		   		
+		  {{#  } }}
+	</script>
+	
+	<script type="text/html" id="PSW">
+		  {{#  if(d.userPassword){ }}
+		  		<span>******</span>
+		  {{#  }else{}}
+		  
+		  {{# } }}
+	</script>
+ 	
 </body>
 
 </html>

@@ -1,16 +1,16 @@
 $(function(){
 	$.ajax({
-		url:"../datas/menu.json",
+		url:path_way.menuList,
 		dataType:"json",
 		type:"get",
 		success:function(data){
 			if(data){
 				var menuData = data.rows;
 				var str = "";
-				for(var i=0;i<data.total;i++){
+				for(var i=0;i<menuData.length;i++){
 					if(menuData[i].childrenMenu){			
-						alert(menuData[i].icon);
-						str += "<li class='layui-nav-item layui-nav-itemed  layui-anim layui-anim-up '>"+
+//						alert(menuData[i].icon);
+						str += "<li class='layui-nav-item layui-anim layui-anim-up '>"+
                         	   "<a href='javascript:;' ><i class='layui-icon'>"+menuData[i].icon+"</i><span>"+menuData[i].menuName+"</span></a>"+
                         	   "<dl class='layui-nav-child'>";
                                
@@ -28,7 +28,8 @@ $(function(){
                             	"</li>";						
 					}				
 				}
-				$("#menuUl").html(str);			
+				$("#menuUl").html(str);	
+				// alert(str);		
 			}else{
 				alert("数据读取错误");
 			}

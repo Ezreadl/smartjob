@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../plugins/layui/css/layui.css" media="all">
+		<style type="text/css">
+			.layui-btn{
+				font-size: 16px !important;
+				padding: 0px 12px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="layui-form" id="labInfoAlert" style="margin: 30px 40px 0px 0px;">
+					<div class="layui-form-item">
+			    	<label class="layui-form-label">实验室名称</label>
+			    		<div class="layui-input-block">
+			      		<input type="text" name="labName" id="labName" required  lay-verify="required"  autocomplete="off" class="layui-input">
+			    	</div>
+			  		</div>
+			  		<div class="layui-form-item">
+				    <label class="layui-form-label">实验室类型</label>
+				    <div class="layui-input-block" >
+			      		<input type="text" name="labType" id="labType" required  lay-verify="required"  autocomplete="off" class="layui-input">				   
+				  </div>
+				</div>				
+			  	<div class="layui-form-item">
+			    	<label class="layui-form-label">适用学校类型</label>
+			    		<div class="layui-input-block">
+			      		<input type="text" name="currentSchoolType" id="currentSchoolType" required  lay-verify="required"  autocomplete="off" class="layui-input">				   
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <button class="layui-btn" lay-submit lay-filter="formDemo" id="labInfoSubmit">提交</button>
+				    </div>
+				  </div>
+			</form>
+		
+	<script src="../../../plugins/layui/layui.all.js"></script>	
+	<script src="../../../js/jquery.min.js"></script>
+	</body>
+</html>

@@ -1,18 +1,19 @@
 $(function(){  
+	
 	var option1 = {
 	  elem: '#teachPlan' 
 	  ,even: true
 	  ,limits: [20,30,50]
   	  ,limit: 20 //默认采用20
 	  ,height:"full-150" //容器高度
-	  ,url:'../../datas/teachPlan.json'
+	  ,url:path_way.teachPlan1
 	  ,page:true
 	  ,cols: [[
-	  			{field:'xueqi', sort: true,title:'学期'},
+	  			// {field:'termName', sort: true,title:'学期'},
 	  			{field:'schoolType',sort: true,title:'学校类型'},
-	  			{field:'useRadio',title:'实验室利用率'},
-	  			{field:'groupLab', sort: true,title:'分组实验开出率'},
-	  			{field:'demoLab', sort: true,title:'演出实验开出率'},
+	  			{field:'targetUsedRate',title:'实验室利用率(%)'},
+	  			{field:'courseRate', sort: true,title:'分组实验开出率(%)'},
+	  			{field:'demoCourseRate', sort: true,title:'演示实验开出率(%)'},
 	  			{fixed: 'right', align:'center', toolbar: '#barDemo',title:'操作'}
 	  ]]//设置表头  
 	};
@@ -38,18 +39,52 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
         //向服务端发送删除指令
       });
     } else if(layEvent === 'edit'){
+    		var targetUsedRate = obj.data.targetUsedRate;
+    		var courseRate = obj.data.courseRate;
+    		var demoCourseRate = obj.data.demoCourseRate;
+    		  	
       		parent.layer.open({
     		type: 2,
-    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','340px'],
+    		title: ["+教学目标修改","font-size:16px"], //不显示标题栏   title : false/标题
+	      	area: ['450px','410px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
 	      	maxmin:true,
-	     	id: 'LAY_layuipro', //设定一个id，防止重复弹出
+	     	id: 'editTeachPlan', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
+	     	content:'./alertInfo/disEduBur/teachPlan.html',
+	     	success:function(layero,index){
+	     		
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     		iframeWin.$("#targetUsedRate").attr("value",targetUsedRate);
+		     		iframeWin.$("#courseRate").attr("value",courseRate);
+		     		iframeWin.$("#demoCourseRate").attr("value",demoCourseRate);
+		     		
+					iframeWin.$("#teachPlanSubmit").click(function(){
+						if(iframeWin.$("#targetUsedRate").val()==""){
+							
+						}else if(iframeWin.$("#courseRate").val()==""){
+							
+						}else if(iframeWin.$("#demoCourseRate").val()==""){
+							
+						}else{
+							$.ajax({
+								type:"get",
+								url:path_way.teachPlan2,
+								dataType:"json",
+								data:iframeWin.$("#teachPlanAlert").serialize(),
+								success:function(data){															
+									table.reload("teachPlan",{});								
+									parent.layer.closeAll('iframe');								
+								}
+						});
+						}									
+						
+					})	
+		     	
+	     	}
 	     	
     	})
     }
@@ -59,8 +94,8 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 	$('#newBuild').on('click', function(){
     	parent.layer.open({
     		type: 2,
-    		title: ["+新建学校","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','340px'],
+    		title: ["+教学目标配置","font-size:16px"], //不显示标题栏   title : false/标题
+	      	area: ['450px','410px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
@@ -68,7 +103,38 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 	     	id: 'nBuild', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/nCreate.html'
+	     	content:'./alertInfo/disEduBur/teachPlan.html',
+	     	success:function(layero,index){
+	     		
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     		
+					iframeWin.$("#teachPlanSubmit").click(function(){
+						if(iframeWin.$("#termName").val()==""){
+							
+						}else if(iframeWin.$("#schoolType").val()==""){
+							
+						}else if(iframeWin.$("#openRate").val()==""){
+							
+						}else if(iframeWin.$("#groupRate").val()==""){
+							
+						}else if(iframeWin.$("#demoRate").val()==""){
+							
+						}else{
+							$.ajax({
+							type:"get",
+							url:"../../datas/teachPlan.json",
+							dataType:"json",
+							data:iframeWin.$("#teachPlanAlert").serialize(),
+							success:function(data){															
+								table.reload("teachPlan",{});								
+								parent.layer.closeAll('iframe');								
+							}
+						});
+						}									
+						
+					})	
+		     	
+	     	}
 	     	
     	})
     	

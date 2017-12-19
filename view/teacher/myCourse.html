@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>课程审批记录</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>	
+	<style type="text/css">
+		.layui-form-onswitch{
+			background-color: #6699cc !important;
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="searchItem">
+		<i class="layui-icon">&#xe615;</i> 
+		搜索条件
+	</div>
+	<div class="tableHeader">
+		
+		<div class="searchForm"  style="width: 87% !important;">
+			<form class="layui-form" action="" style="height: 100%;">
+				 <div class="layui-form-item">
+				 	<div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">预约状态</option>
+			          <option value="1">已预约</option>
+			          <option value="2">未预约</option> 
+			        </select>
+			     </div>
+			     
+			     <div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">年级</option>
+			          <option value="1">三年级</option>
+			          <option value="2">四年级</option> 
+			        </select>
+			     </div>
+			     
+			      <div class="layui-input-inline">
+			        <select name="modules" lay-verify="required" lay-search="">
+			          <option value="">学科</option>
+			          <option value="1">物理</option>
+			          <option value="2">化学</option> 
+			        </select>
+			     </div>
+			   
+				  	<div class="layui-input-inline" style="width:5%;">
+				  		<div class="layui-input-block" style="margin-left:10px !important;">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">查询</button>
+					    </div>
+				  	</div>
+				 </div>
+				 
+			</form>
+		</div>	
+	</div>
+	
+	<div class="searchItem" style="float: left;width: 100%;">
+		<i class="layui-icon">&#xe62d;</i> 
+		查询结果
+		
+		<div class="tableOptions" style="width: 35% !important;">	
+			<button class="newCreate" id="download">
+				<i class="fa fa-download"></i>
+				<span>导出</span>
+			</button>	
+			<button class="newCreate" id="myCourseCharts" style="width: 150px;">
+				<i class="fa fa-download"></i>
+				<span>我的实验完成率</span>
+			</button>	
+			<button class="newCreate" id="appt" lay-event="appt">
+				<i class="fa fa-download"></i>
+				<span>预约</span>
+			</button>	
+		</div>
+	</div>
+	
+	<table class="layui-table" id="myCourseList"  lay-filter="demo"></table>
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+      <script src="../path.js"></script>
+    <script src="../../js/pageJs/teacher/myCourse.js"></script>
+    <script type="text/html" id="demonstration">
+    	 {{#  if(d.demonstration==1){ }}
+		  		<span><i class="layui-icon" style="font-size: 18px; color: #336699;">&#xe658;</i></span>
+		  {{#  }else{}}
+		  		<span></span>	
+		  {{# } }}
+    	 
+    </script>
+    <script type="text/html" id="yuState">	 
+    	 {{#  if(d.yuState==0){ }}
+		  		<a href="javascript:;" lay-event="editOrder" style="color: red;font-weight: bold;">【审批中】</a>
+		  {{#  }else if(d.yuState==1){}}
+		  		<a href="javascript:;" lay-event="editOrder">【已预约】</a>
+		  {{# }else{ }}
+    	 		<a href="javascript:;" lay-event="replay" style="font-weight: bold;text-decoration: underline;color: #0000FF;">【回看】</a>
+    	  {{# } }}
+    </script>
+    
+    <!--<script type="text/html" id="classState">	 
+    	 {{#  if(d.classState==0){ }}
+		  		<span>未预约</span>
+		  {{#  }else if(d.classState==1){}}
+		  		<span>审批中</span>
+		  {{# }else{ }}
+    	 		<span>课程已完成</span>
+    	  {{# } }}
+    </script>-->
+    
+     <script type="text/html" id="lessonTypeState">	 
+    	 {{#  if(d.lessonType==0){ }}
+		  		<span>演示</span>
+		  {{# }else{ }}
+    	 		<span>分组</span>
+    	  {{# } }}
+    </script>
+</body>
+
+</html>

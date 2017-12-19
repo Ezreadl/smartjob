@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用户信息管理</title>
+    <link rel="stylesheet" href="../../plugins/layui/css/layui.css" media="all">
+    <!--<link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css" media="all" />-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pageCss/labInfo.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pageCss/zzsc.css"/>-->
+    <style type="text/css">
+        body,
+        html {
+            overflow-y: hidden;
+        }
+
+        .lablist {
+            width:48%;
+            height: 460px;
+            /*border: 1px solid #ccc;*/
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .labVideo {
+            width: 100%;
+            height: 460px;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .lablistInfo {
+            width: 100%;
+            height: 100%;
+            /*border: 1px solid #ccc;*/
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .contentTitle{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            color: #336699;
+            /*font-weight: bold;*/
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .courseInfo{
+        	width: 100%;
+        	height: 100px;
+        	box-sizing: border-box;
+        	margin-top: 10px;
+        	padding: 10px;
+        	border-bottom: 1px solid #ccc;
+        }
+        .courseInfoLi{
+        	height: 100%;
+        	line-height: 100px;
+        	float: left;
+        }
+        .courseInfo li:nth-child(1){
+        	width: 13%;
+        	border-radius: 50%;
+        	box-sizing: border-box;
+        	border: 1px solid #000000;    	
+        }
+        .courseInfo li:nth-child(2){
+        	width: 87%;
+        	height: 100%;
+        	box-sizing: border-box;
+        	padding-left: 20px;
+        }
+        .courseInfoLi img{
+        	width: 100%;
+        	height: 100%;
+        	border-radius: 50%;
+        }
+        h3{
+        	line-height: 20px;
+        	/*border: 1px solid red;*/
+        }
+        p{
+        	line-height: 20px;
+        	color: #666666;
+        }
+    </style>
+</head>
+
+<body>
+
+                <div class="lablist">
+                    <div class="lablistInfo">
+                         <div class="contentTitle">
+					            <i class="layui-icon" style=" color: #336699;">&#xe623;</i>  
+					            	本周使用情况
+					      </div>
+					      <ul class="courseInfo">
+					      	<li class="courseInfoLi">
+					      		<img src="../../images/1.jpg"/>
+					      	</li>
+					      	<li class="courseInfoLi">
+					      		<h3 style="color: #0070A3;">吴林&nbsp;&nbsp;&nbsp;小学科学&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">五年级3班</span></h3>
+					      		<p>实验内容：了解细菌的主要特点和对人正反两方面的作用。
+					      			·知道真菌是既不属于植物也不属于动物的一类生物。
+					      			·了解病毒也是生物中的一类。</p>
+					      	</li>
+					      </ul>
+					      <ul class="courseInfo">
+					      	<li class="courseInfoLi">
+					      		<img src="../../images/2.jpg"/>
+					      	</li>
+					      	<li class="courseInfoLi">
+					      		<h3 style="color: #0070A3;">赵雅琳&nbsp;&nbsp;&nbsp;小学物理&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">六年级3班</span></h3>
+					      		<p>实验内容：了解通过加热或冷却可使物体的形状或大小发生变化，列举常见的热胀冷缩现象。</p>
+					      	</li>
+					      </ul>
+					      <ul class="courseInfo">
+					      	<li class="courseInfoLi">
+					      		<img src="../../images/3.jpg"/>
+					      	</li>
+					      	<li class="courseInfoLi">
+					      		<h3 style="color: #0070A3;">林婷&nbsp;&nbsp;&nbsp;小学科学&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">四年级2班</span></h3>
+					      		<p>实验内容：会使用简单仪器（如尺、天平、温度计）测量物体的常见特征（长度、重量、 温度）， 能设计简单的二维记录表格，做简单的定量记录，并能使用适当的单位。</p>
+					      	</li>
+					      </ul>
+					   
+                    </div>
+                </div>
+
+
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemo" style="width: 48%;height: 460px;float: left">
+        <ul class="layui-tab-title">
+            <li class="layui-this" lay-id="num1">化学实验室</li>
+            <li lay-id="num2">科学实验室</li>
+            <li lay-id="num3">物理实验室</li>
+            <li lay-id="num4">生物实验室</li>
+        </ul>
+
+        <div class="layui-tab-content">
+
+            <!--化学实验室-->
+            <div class="layui-tab-item layui-show">
+
+                <div class="labVideo">
+                    <center>
+                        <P>
+                            <OBJECT id="SNMSCloudOcx" classid="clsid:DEEE91FD-B7EE-451A-BF54-F7A289BC422D" align=right hspace=0 vspace=0 width=100% height=460>
+            </OBJECT>
+                </div>
+            </div>
+
+            <!--科学实验室-->
+            <div class="layui-tab-item">
+                <div class="labVideo">
+                    <center>
+                        <P>
+                            <OBJECT id="SNMSCloudOcx2" classid="clsid:DEEE91FD-B7EE-451A-BF54-F7A289BC422D" align=right hspace=0 vspace=0 width=100%
+                                height=460>
+            </OBJECT>
+                </div>
+            </div>
+
+
+            <!--化学实验室-->
+            <div class="layui-tab-item">
+                <div class="labVideo">
+                    <center>
+                        <P>
+                            <OBJECT id="SNMSCloudOcx3" classid="clsid:DEEE91FD-B7EE-451A-BF54-F7A289BC422D" align=right hspace=0 vspace=0 width=100%
+                                height=460>
+                    </OBJECT>
+                </div>
+            </div>
+
+            <!--生物实验室-->
+            <div class="layui-tab-item">
+                <div class="labVideo">
+                    <center>
+                        <P>
+                            <OBJECT id="SNMSCloudOcx4" classid="clsid:DEEE91FD-B7EE-451A-BF54-F7A289BC422D" align=right hspace=0 vspace=0 width=100%
+                                height=460>
+            </OBJECT>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../plugins/layui/layui.all.js"></script>
+    <script src="../../plugins/jquery.min.js"></script>
+      <!--<script src="../path.js"></script>-->
+    <script src="../../js/pageJs/CSSP_Interface.js"></script>
+    <script type="text/javascript">
+        function getCurChannelID() {
+            return getEle('ChannelID').value;
+        }
+
+        function getCurChannelID2() {
+            return getEle('ChannelID2').value;
+        }
+
+        function showResult(msg) {
+            getEle('result_textareas').innerHTML = msg;
+        }
+
+        function getEle(id) {
+            return document.getElementById(id);
+        }
+        window.onload = function () {
+            CreateInstance();
+            //SnCloud_SetPath('C:\\Picture','C:\\Reocrd');
+        }
+
+        window.onbeforeunload = function () {
+            //SnCloud_DestroyInstance();
+            //alert('开始销毁');
+        }
+
+        var DbsIP = '125.68.187.248';
+        var DbsPort = 10080;
+        var PlatformUserName = 'snadmin';
+        var PlatfromUserPwd = '123456';
+        var ChannelID = "";
+        //控件函数
+        function CreateInstance() {
+            SnCloud_CreateInstance();
+        }
+
+        function DestroyInstance() {
+            SnCloud_DestroyInstance();
+        }
+
+        function GetSourceInfo() {
+            //		alert(123);
+            var SourceInfo;
+            SourceInfo = SnCloud_GetSourceInfo(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd, '5');
+            //		alert(SourceInfo);
+            showResult(SourceInfo);
+        }
+
+        function StartVideo() {
+            SnCloud_StartVideo(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd, ChannelID, 1);
+            // alert(DbsIP);
+        }
+
+        function StartPlayback() {
+            SnCloud_StartPlayback(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd,
+                getCurChannelID(), '2016-12-29 00:00:00', '2016-12-29 23:59:59');
+        }
+
+        function StopVideo() {
+            SnCloud_StopVideo();
+        }
+
+        function GetAlarmTypes() {
+            var SourceInfo;
+            SourceInfo = SnCloud_GetAlarmTypes(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd);
+            showResult(SourceInfo);
+        }
+
+        function GetAlarmInfos() {
+            var SourceInfo;
+            var AlarmTypeId = -1;
+            var DevName = '';
+            var AlarmPosi = '';
+            var AlarmTiemB = '2016-12-29 00:00:00';
+            var AlarmTimeE = '2017-12-29 00:00:00';
+            var StartLine = 0;
+            var LineCnt = 100;
+            SourceInfo = SnCloud_GetAlarmInfos(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd,
+                AlarmTypeId, DevName, AlarmPosi, AlarmTiemB, AlarmTimeE,
+                StartLine, LineCnt);
+            showResult(SourceInfo);
+        }
+
+        function StartTalkBack() {
+            SnCloud_StartTalk(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd, getCurChannelID(), 1);
+        }
+
+        function StartBroadCast() {
+            SnCloud_StartTalk(DbsIP, DbsPort, PlatformUserName, PlatfromUserPwd, getCurChannelID() + ',' +
+                getCurChannelID2(), 1);
+        }
+
+        function StopTalk() {
+            SnCloud_StopTalk();
+        }
+
+        function GetVersion() {
+            var ret;
+            ret = SnCloud_GetVersion();
+            showResult(ret);
+        }
+    </script>
+
+  <script src="../../js/pageJs/schoolLab.js"></script>
+
+</body>
+
+</html>

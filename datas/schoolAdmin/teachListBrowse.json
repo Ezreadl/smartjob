@@ -1,0 +1,539 @@
+{
+	"code": 0,
+	"msg": "",
+	"count": 21,
+    "data":[
+        {
+            "content":"·了解细菌的主要特点和对人正反两方面的作用。·知道真菌是既不属于植物也不属于动物的一类生物。·了解病毒也是生物中的一类。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"面包或慢头发霉的条件比较",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"比较加工食品里的添加剂",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察比较生熟鸡肉(或其它肉类)",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"研究食物包装上的信息",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察发霉的面包或馒头（观察霉的形状和颜色）",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察比较生熟马铃薯",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察变质的食物",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察水中的微生物",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"",
+            "outClass":"",
+            "parentTitle":"1.1多样的生物",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"1.生命世界领域",
+            "title":"1.1.3常见的其他生物"
+        },
+        {
+            "content":"·了解通过加热或冷却可使物体的形状或大小发生变化，列举常见的热胀冷缩现象。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"糖、蜡烛受热和冷却后的变化",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"研究液体和气体的热胀冷缩",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"研究固体的热胀冷缩",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"学习使用酒精灯",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                }
+            ],
+            "grade":"四年级",
+            "gradeYear":"上学期",
+            "inClass":"",
+            "outClass":"",
+            "parentTitle":"2.1物体与物质",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"2.物质世界领域",
+            "title":"2.1.1物体的特征"
+        },
+        {
+            "content":"·会使用简单仪器（如尺、天平、温度计）测量物体的常见特征（长度、重量、 温度）， 能设计简单的二维记录表格，做简单的定量记录，并能使用适当的单位。在此经验基础上，对其他物体进行估量。意识到多次测量能够提高测量的准确性。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"使用简单仪器（如尺、天平、温度计）测量物体的常见特征（长度、重量、 温度）",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"2.1物体与物质",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"2.物质世界领域",
+            "title":"2.1.1物体的特征"
+        },
+        {
+            "content":"·知道生活中常见动物的名称。能用不同标准对动物进行分类。·归纳某一类动物的共同特征。·认识常见动物的几种类型，如昆虫、鱼类、两栖类、爬行类、鸟类、哺乳类。·了解更多的动物种类，感受动物世界的纷繁复杂。·认识动物运动方式的多样性。·了解保护动物特别是保护濒危动物的重要性。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察蜗牛、蚯蚓、蚂蚁、金鱼等小动物的身体、运动、呼吸和捕食等特征。",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"1.1多样的生物",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"1.生命世界领域",
+            "title":"1.1.2常见的动物"
+        },
+        {
+            "content":"·知道自然界水资源的分布。·知道水能溶解一些物质。·意识到水与生物的密切关系。·欣赏自然界水体的美丽。·知道水域污染的危害及主要原因。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"100毫升水能溶解多少克食盐",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察高锰酸钾的溶解",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"醋、酒精和食用油是怎样溶解的",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"咸水变淡水",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"用过滤的方法净化水",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"气体在水中的溶解能力",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察胶水和洗发液是怎样溶解的",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"过滤食盐、沙、面粉与水的混合物",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"食盐和小苏打在水中的溶解能力",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"水的溶解实验",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"研究溶解快慢与哪些因素有关",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"观察比较自来水和生活污水",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"",
+            "outClass":"OUT_CLASS",
+            "parentTitle":"3.1地球的概貌与地球的物质",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"3.地球与宇宙领域",
+            "title":"3.1.3地球的物质之二：水"
+        },
+        {
+            "content":"·能判断物体是由不同材料组成的，如木头、金属、塑料、纸等，并能按材料对物体进行分类。·认识某些材料的性质（如是否导电，是否溶解，是否传热，沉浮性等），根据 这些性质对材料进行分类。能将材料的特性与它的用途相联系。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察水和食用油",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察纸的表面和撕开后纸的毛边",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较纸纵向、横向的结实程度",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较物体的硬度、认识金属",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"认识材料在水中的沉浮（认识木头）",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较不同材料的吸水性",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"洗洁精、食用油和水流动快慢的比较",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"造一张纸",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较物体的韧性、认识塑料",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较纸的吸水性及透明度",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                }
+            ],
+            "grade":"五年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"2.1物体与物质",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"2.物质世界领域",
+            "title":"2.1.2材料的性质与用途"
+        },
+        {
+            "content":"·能区分常见的天然材料和人造材料。意识到人类为了满足自身的需求，不断在 发明新的材料。增强对新事物的敏感性，激发创新意识。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"研究制作物品的材料和特点",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"2.1物体与物质",
+            "starCourse":" ",
+            "subjectName":"2.物质世界领域",
+            "title":"2.1.2材料的性质与用途"
+        },
+        {
+            "content":"·能用一定办法证明空气的存在。·了解人类对空气性质的利用。·知道空气对生命的意义。 联系空气对植物的作用，体验大气层对地球生命的意义。·了解人类活动对大气层产生的不良影响，意识到保护大气层的重要性。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"吹瓶子里的气球",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"认识二氧化碳的性质",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"探究压缩空气的力量",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"验证空气有重量的实验",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"空气占据空间会变化",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"空气占据空间",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"证明空气中有水蒸气",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"比较空气和水",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"3.1地球的概貌与地球的物质",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"3.地球与宇宙领域",
+            "title":"3.1.4地球的物质之三：空气"
+        },
+        {
+            "content":"·能用感官判断物体的特征，如大小、轻重、形状、颜色、冷热、沉浮等，并加以描述。·能根据特征对物体进行简单分类或排序。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"用嘴尝，辨别饮料",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"给铅笔排序",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":" ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"听声辨位",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"用鼻子闻，辨认水果",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"对着镜子看自己的眼睛",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"搜集同学指纹并分类",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"用手摸，辨认口袋里的物品",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":" "
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"不同材料的导热性能比较",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":" "
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"2.1物体与物质",
+            "starCourse":" ",
+            "subjectName":"2.物质世界领域",
+            "title":"2.1.1物体的特征"
+        },
+        {
+            "content":"·能说出周围常见植物的名称，并能对常见植物进行简单分类。·了解当地的植物资源,能意识到植物与人类生活的密切关系。·了解更多的植物种类，感受植物世界的多姿多彩。·养成爱护花草树木的习惯。",
+            "demonstration":"NEED",
+            "detail":[
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":" ",
+                    "labCourseName":"多种花的观察",
+                    "labCourseOutClass":"√",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察和拓印树皮",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                },
+                {
+                    "labCourseDemonstration":"√ ",
+                    "labCourseInClass":"√ ",
+                    "labCourseName":"观察大树、小草、水生植物、叶",
+                    "labCourseOutClass":" ",
+                    "labCourseStarCourse":"★"
+                }
+            ],
+            "grade":"三年级",
+            "gradeYear":"上学期",
+            "inClass":"IN_CLASS",
+            "outClass":"IN_CLASS",
+            "parentTitle":"1.1多样的生物",
+            "starCourse":"STAR_COURSE",
+            "subjectName":"1.生命世界领域",
+            "title":"1.1.1常见的植物"
+        }
+    ]
+}

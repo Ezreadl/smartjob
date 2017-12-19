@@ -4,19 +4,17 @@ $(function(){
 	  ,even: true
 	  ,limits: [20,30,50]
   	  ,limit: 20 //默认采用20
-	  ,height:"full-140" //容器高度
-	  ,url:'../../datas/check.json'
+	  ,height:"full-155" //容器高度
+	  ,url:path_way.schoolCheck1
 	  ,page:true
 	  ,cols: [[
-	  			{field:'formerTime',width:150,sort: true,title:'原上课时间'},
-	  			{field:'modufyTime',width:150,sort: true,title:'调课时间'},
-	  			{field:'class', width:150,sort: true,title:'班级'},
-	  			{field:'teacher',width:150, sort: true,title:'开课教师'},
-	  			{field:'lab',width:150,sort: true,title:'实验室'},
-	  			{field:'labContent',width:200,title:'实验内容'},
-	  			{field:'course',width:150, sort: true,title:'科目'},
-	  			{field:'testType',width:150, sort: true,title:'实验类型'},
-	  			{field:'modifyReason',width:150,title:'调课原因'},
+	  			{field:'lessonTime',width:250,sort: true,title:'原上课时间'},
+	  			{field:'start',width:250,sort: true,title:'调课时间'},			
+	  			{field:'className', width:140,sort: true,title:'班级'},
+	  			{field:'teacherName',width:150, sort: true,title:'开课教师'},
+	  			{field:'lessonTitle',width:200,title:'实验内容'},
+	  			{field:'subjectName',width:140, sort: true,title:'学科类型'},
+	  			{field:'changeRes',width:250,title:'调课原因'},
 	  			{field:'checkState', width:100,fixed:'right',sort: true,title:'审核状态',templet:'#checkState'}
 	  ]]//设置表头  
 	};
@@ -47,7 +45,7 @@ layui.use(['laypage', 'layer', 'table','form','element','laydate'], function(){
       	parent.layer.open({
     		type: 2,
     		title: ["调课审批","font-size:18px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','350px'],
+	      	area: ['500px','320px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
@@ -55,7 +53,26 @@ layui.use(['laypage', 'layer', 'table','form','element','laydate'], function(){
 	     	id: 'checkstate', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/schoolAdmin/classCheck.html'
+	     	content:'./alertInfo/schoolAdmin/classCheck.html',
+	     	success:function(layero,index){
+	     		
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     		
+					iframeWin.$("#checkSubmit").click(function(){
+						$.ajax({
+							type:"get",
+							url:path_way.schoolCheck2,
+							dataType:"json",
+							data:iframeWin.$("#checkSubmitAlert").serialize(),
+							success:function(data){															
+								table.reload("schoolCheck",{});								
+								parent.layer.closeAll('iframe');								
+							}
+						});								
+						
+					})	
+		     	
+	     	}
 	     	
     	})
     }

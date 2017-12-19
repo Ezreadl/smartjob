@@ -5,10 +5,10 @@ $(function(){
 	  ,limits: [20,30,50]
   	  ,limit: 20 //默认采用20
 	  ,height:"full-150" //容器高度
-	  ,url:'../../datas/xueqi.json'
+	  ,url:path_way.xueqiInfo1
 	  ,page:true
 	  ,cols: [[
-	  			{field:'schoolType',sort: true, fixed: true,title:'学校类型'},
+//	  			{field:'schoolType',sort: true, fixed: true,title:'学校类型'},
 	  			{field:'xueqiName',title:'学期名称'},
 	  			{field:'startTime', sort: true,title:'开始时间'},
 	  			{field:'endTime', title:'结束时间',templet:'#auth'},
@@ -36,30 +36,15 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
         layer.close(index);
         //向服务端发送删除指令
       });
-    } else if(layEvent === 'edit'){
-      		parent.layer.open({
-    		type: 2,
-    		title: ["+修改学期信息","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','380px'],
-	      	shade: 0.8,
-	      	anim:2,
-	      	skin: 'layui-layer-lan',
-	      	maxmin:true,
-	     	id: 'nTime1', //设定一个id，防止重复弹出
-	      	resize: false,
-	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/xueqi.html'
-	     	
-    	})
     }
   });
 
 	 
 	$('#newBuild').on('click', function(){
     	parent.layer.open({
-    		type: 2,
-    		title: ["+新建学期","font-size:16px"], //不显示标题栏   title : false/标题
-	      	area: ['500px','380px'],
+    			type: 2,
+    			title: ["+新建学期","font-size:16px"], //不显示标题栏   title : false/标题
+	      	area: ['400px','400px'],
 	      	shade: 0.8,
 	      	anim:2,
 	      	skin: 'layui-layer-lan',
@@ -67,7 +52,33 @@ layui.use(['laypage', 'layer', 'table','form','element'], function(){
 	     	id: 'nBuild', //设定一个id，防止重复弹出
 	      	resize: false,
 	     	moveType: 1, //拖拽模式，0或者1
-	     	content:'./alertInfo/xueqi.html'
+	     	content:'./alertInfo/disEduBur/xueqi.html',
+	     	success:function(layero,index){	     		
+		     		var iframeWin = parent.parent.window[layero.find('iframe')[0]['name']];
+		     	
+					iframeWin.$("#xueqiSubmit").click(function(){
+						if(iframeWin.$("#xueqiName").val()==""){
+							
+						}else if(iframeWin.$("#startTime").val()==""){
+							
+						}else if(iframeWin.$("#endTime").val()==""){
+							
+						}else{
+							$.ajax({
+							type:"get",
+							url:path_way.xueqiInfo2,
+							dataType:"json",
+							data:iframeWin.$("#xueqiAlert").serialize(),
+							success:function(data){															
+								table.reload("xueqiInfo",{});								
+								parent.layer.closeAll('iframe');								
+							}
+						});
+						}									
+						
+					})	
+		     	
+	     	}
 	     	
     	})
     	

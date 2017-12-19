@@ -1,0 +1,35 @@
+{
+    "playParam":[
+    	{
+	        "appUrl":"snview://com.starnet.snview/realplay?devicename=分水中学物理实验室1&deviceip=125.68.187.248&port=10076&devusername=K1L105T000108&devpassword=123456&channel=1&sysusername=SYS_USER_NAME&syspassword=SYS_PASSWORD",
+	        "devKey":"4028828d5e16c0cc015e9348cd0001b3",
+	        "password":"123456",
+	        "serverIp":"125.68.187.248",
+	        "serverPort":"10080",
+	        "userName":"root"
+    	},
+    	{
+	    	"appUrl":"snview://com.starnet.snview/playback?devicename=城西附小实验室一室&deviceip=125.68.187.248&port=10076&devusername=6704H203P0090&devpassword=123456&channel=2&starttime=2017-11-28 10:35:00&endtime=2017-11-28 11:15:00&sysusername=SYS_USER_NAME&syspassword=SYS_PASSWORD",
+	        "devKey":"4028828d5f80dc2c015f90c91cb500e3",
+	        "password":"123456",
+	        "serverIp":"125.68.187.248",
+	        "serverPort":"10080",
+	        "userName":"root"
+        }
+    
+    ],
+    "schedule":{
+        "end":"2017-11-28 11:15:00",
+        "macSignal":"等待结果",
+        "moveSignal":"未达到上课人数",
+        "picPath":"http://125.68.187.248:10080/alarmpicture/17369.jpg,http://125.68.187.248:10080/alarmpicture/17368.jpg,http://125.68.187.248:10080/alarmpicture/17367.jpg,http://125.68.187.248:10080/alarmpicture/17366.jpg,http://125.68.187.248:10080/alarmpicture/17365.jpg",
+        "start":"2017-11-28 10:35:00",
+        "status":"NOTEVALUATED",
+        "updateStatus":0
+    },
+    "result":"0"
+
+
+
+    
+}

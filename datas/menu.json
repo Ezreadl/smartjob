@@ -1,14 +1,23 @@
-{
+﻿{
     "total":6,
     "rows":[
-        {
+            {
             "icon":"",
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./disEduBur/check.html",
+            "url":"./view/disEduBur/course.html",
+            "menuID":13,
+            "menuName":"课堂中心"
+        },
+            {
+            "icon":"",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":0,
+            "url":"./view/disEduBur/labInfo.html",
             "menuID":1,
-            "menuName":"课程审批记录"
+            "menuName":"实验室利用率"
         },
         {
             "icon":"",
@@ -18,8 +27,8 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./disEduBur/schoolInfo.html",
-                    "menuID":7,
+                    "url":"./view/disEduBur/schoolInfo.html",
+                    "menuID":2,
                     "menuName":"学校信息管理"
                 },
                 {
@@ -27,8 +36,8 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./disEduBur/xueqi.html",
-                    "menuID":8,
+                    "url":"./view/disEduBur/xueqi.html",
+                    "menuID":3,
                     "menuName":"学期信息管理"
                 },
                 {
@@ -36,8 +45,8 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./disEduBur/teachList.html",
-                    "menuID":9,
+                    "url":"./view/disEduBur/teachList.html",
+                    "menuID":4,
                     "menuName":"教学目录管理"
                 },
                 {
@@ -45,15 +54,24 @@
                     "childrenMenu":null,
                     "tabId":"",
                     "actionType":0,
-                    "url":"./disEduBur/teachPlan.html",
-                    "menuID":10,
+                    "url":"./view/disEduBur/teachPlan.html",
+                    "menuID":5,
                     "menuName":"教学目标配置"
-                }
+                },
+                  {
+            "icon":"",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":0,
+            "url":"./view/disEduBur/userInfo.html",
+            "menuID":7,
+            "menuName":"用户信息管理"
+        }
             ],
             "tabId":"",
             "actionType":0,
             "url":"",
-            "menuID":2,
+            "menuID":6,
             "menuName":"基础信息管理"
         },
         {
@@ -61,26 +79,17 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":0,
-            "url":"./disEduBur/labInfo.html",
-            "menuID":3,
-            "menuName":"实验室利用率"
-        },
-        {
-            "icon":"",
-            "childrenMenu":null,
-            "tabId":"",
-            "actionType":0,
-            "url":"./disEduBur/userInfo.html",
-            "menuID":4,
-            "menuName":"用户信息管理"
+            "url":"./view/controlPeople/check.html",
+            "menuID":8,
+            "menuName":"课程预约记录(区监督员)"
         },
         {
             "icon":"",
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./schoolAdmin/schoolCheck.html",
-            "menuID":5,
+            "url":"./view/schoolAdmin/schoolCheck.html",
+            "menuID":9,
             "menuName":"调课审批(学校admin)"
         },
         {
@@ -88,9 +97,63 @@
             "childrenMenu":null,
             "tabId":"",
             "actionType":1,
-            "url":"./schoolAdmin/schoolBasic.html",
-            "menuID":6,
+            "url":"./view/schoolAdmin/schoolBasic.html",
+            "menuID":10,
             "menuName":"基础信息管理(学校admin)"
+        },
+         {
+            "icon":"",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/schoolAdmin/schoolLab.html",
+            "menuID":14,
+            "menuName":"实验室利用率"
+        },
+        {
+        	"icon":"&#xe6b2;",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/labPeople/orderList.html",
+            "menuID":11,
+            "menuName":"预约审批(实验员)"
+        },
+        {
+        	"icon":"&#xe6b2;",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/teacher/myCourse.html",
+            "menuID":12,
+            "menuName":"我的课程(教师)"
+        },
+        {
+        	"icon":"&#xe6b2;",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/disEduBur/courseCharts.html",
+            "menuID":15,
+            "menuName":"巡课1"
+        },
+         {
+            "icon":"",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/disEduBur/courseCharts1.html",
+            "menuID":16,
+            "menuName":"巡课2"
+        },
+        {
+            "icon":"",
+            "childrenMenu":null,
+            "tabId":"",
+            "actionType":1,
+            "url":"./view/disEduBur/xunping.html",
+            "menuID":17,
+            "menuName":"视频巡查"
         }
     ]
 }

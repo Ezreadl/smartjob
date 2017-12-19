@@ -1,0 +1,37 @@
+{   
+    "code":0,
+    "count":2,
+    "msg":"操作成功",
+    "data": [
+        {
+            "className": "九年级1班",
+            "demoRate": "0.00%",
+            "rank": 1,
+            "realDemoClassHour": 0,
+            "realRequiredClassHour": 9,
+            "requiredRate": "36.00%",
+            "totalDemoClassHour": 5,
+            "totalRequiredClassHour": 25
+        },
+         {
+            "className": "九年级3班",
+            "demoRate": "0.00%",
+            "rank": 1,
+            "realDemoClassHour": 0,
+            "realRequiredClassHour": 9,
+            "requiredRate": "30.00%",
+            "totalDemoClassHour": 5,
+            "totalRequiredClassHour": 25
+        },
+         {
+            "className": "九年级4班",
+            "demoRate": "0.00%",
+            "rank": 1,
+            "realDemoClassHour": 0,
+            "realRequiredClassHour": 9,
+            "requiredRate": "56.00%",
+            "totalDemoClassHour": 5,
+            "totalRequiredClassHour": 25
+        }
+    ]
+}

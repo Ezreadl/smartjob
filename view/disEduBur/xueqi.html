@@ -27,10 +27,11 @@
 				 <div class="layui-form-item">
 				 	<div class="layui-input-inline">
 			        <select name="modules" lay-verify="required" lay-search="">
-			          <option value="">学校类型</option>
-			          <option value="1">小学</option>
-			          <option value="2">初中</option> 
-			          <option value="3">高中</option>
+			          <option value="">学期</option>
+			          <option value=""></option>
+			          <option value="1">2017-2018上学期</option>
+			          <option value="2">2017-2018下学期</option> 
+			          <option value="3">2017-2018上学期</option>
 			        </select>
 			      </div>
 				  	
@@ -69,13 +70,12 @@
 		<table class="layui-table" id="xueqiInfo"  lay-filter="demo"></table>
 
 <script type="text/html" id="barDemo">
-  <a class="layui-btn layui-btn-mini" lay-event="edit" title="编辑" style="background-color: #f8f8f8;color: #0099cc;">编辑</a>
-  <a class="layui-btn layui-btn-mini" lay-event="detail" style="background-color: #f8f8f8;color: #0099cc;font-weight: bold;">|</a>
   <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del" title="删除" style="background-color: #f8f8f8;color: orangered;">删除</a>
 </script>
 
     <script src="../../plugins/layui/layui.all.js"></script>
     <script src="../../plugins/jquery.min.js"></script>
+    <script src="../path.js"></script>
     <script src="../../js/pageJs/disEduBur/basic2.js"></script>
 </body>
 
